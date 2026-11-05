@@ -1,0 +1,9 @@
+{
+  "root": true,
+  "extends": ["next/core-web-vitals"],
+  "ignorePatterns": [".next", ".cache", "node_modules", "e2e/**", "scratch/**", "next-env.d.ts"],
+  "rules": {
+    "react-hooks/exhaustive-deps": "warn",
+    "@next/next/no-html-link-for-pages": "off"
+  }
+}

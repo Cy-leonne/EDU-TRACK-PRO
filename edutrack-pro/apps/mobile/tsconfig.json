@@ -1,0 +1,38 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "jsx": "react-native",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ],
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "noEmit": true,
+    "types": [
+      "react",
+      "react-native"
+    ],
+    "module": "esnext",
+    "baseUrl": ".",
+    "paths": {
+      "@edutrack/shared-config": [
+        "../../packages/shared-config"
+      ],
+      "@edutrack/shared-types": [
+        "../../packages/shared-types"
+      ],
+      "@edutrack/validation": [
+        "../../packages/validation"
+      ]
+    }
+  },
+  "include": [
+    "index.js",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "App.tsx"
+  ]
+}

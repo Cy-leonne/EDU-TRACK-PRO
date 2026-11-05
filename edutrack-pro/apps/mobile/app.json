@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "EduTrack Pro",
+    "slug": "edutrack-pro",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "edutrackpro",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "ke.edutrack.pro",
+      "infoPlist": {
+        "NSCameraUsageDescription": "EduTrack Pro uses the camera so a guardian can photograph their child's completed work and hand it in.",
+        "NSPhotoLibraryUsageDescription": "EduTrack Pro needs access to your photos so you can attach a picture of completed work."
+      }
+    },
+    "android": {
+      "package": "ke.edutrack.pro",
+      "permissions": ["CAMERA", "READ_MEDIA_IMAGES"],
+      "adaptiveIcon": {
+        "backgroundColor": "#12304A"
+      }
+    },
+    "extra": {
+      "apiUrl": "http://10.0.2.2:4000/api/v1"
+    }
+  }
+}

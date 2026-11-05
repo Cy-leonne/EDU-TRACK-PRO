@@ -1,0 +1,107 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Typecheck, lint, build, tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: edutrack
+          POSTGRES_PASSWORD: edutrack
+          POSTGRES_DB: edutrack_pro_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U edutrack"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+
+    env:
+      # Never real credentials: throwaway values for an ephemeral CI database.
+      DATABASE_URL: postgresql://edutrack:edutrack@localhost:5432/edutrack_pro_test?schema=public
+      TEST_DATABASE_URL: postgresql://edutrack:edutrack@localhost:5432/edutrack_pro_test?schema=public
+      JWT_ACCESS_SECRET: ci-only-access-secret-not-for-production
+      JWT_REFRESH_SECRET: ci-only-refresh-secret-not-for-production
+      NODE_ENV: test
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build shared packages
+        run: npm run build:packages
+
+      - name: Apply migrations to the test database
+        run: npx prisma migrate deploy
+
+      - name: Typecheck (API, web, mobile)
+        run: npm run typecheck
+
+      - name: Lint (API, web)
+        run: npm run lint
+
+      - name: Production build (API + web)
+        run: npm run build
+
+      - name: Unit, integration and E2E suites
+        run: npm run test:all
+
+  browser:
+    name: Playwright browser suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    needs: quality
+
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          POSTGRES_USER: edutrack
+          POSTGRES_PASSWORD: edutrack
+          POSTGRES_DB: edutrack_pro_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U edutrack"
+          --health-interval 10s --health-timeout 5s --health-retries 10
+
+    env:
+      E2E_DATABASE_URL: postgresql://edutrack:edutrack@localhost:5432/edutrack_pro_test?schema=public
+      DATABASE_URL: postgresql://edutrack:edutrack@localhost:5432/edutrack_pro_test?schema=public
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright chromium and its system libraries
+        run: npm run e2e:install
+
+      - name: Build shared packages and the API
+        run: npm run build:packages && npm run -w @edutrack/api build
+
+      - name: Run the browser suite
+        run: npm run test:e2e:web

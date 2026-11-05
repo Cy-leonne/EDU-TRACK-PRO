@@ -1,0 +1,18 @@
+import { chromium } from '@playwright/test';
+const BASE = 'http://127.0.0.1:3000';
+const browser = await chromium.launch();
+const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true, hasTouch: true });
+const page = await ctx.newPage();
+page.on('console', (m) => console.log('CONSOLE', m.type(), m.text().slice(0, 160)));
+page.on('pageerror', (e) => console.log('PAGEERROR', e.message.slice(0, 200)));
+page.on('response', (r) => { if (r.status() >= 400) console.log('HTTP', r.status(), r.url().replace(BASE, '').slice(0, 90)); });
+await page.goto(`${BASE}/login`);
+await page.fill('input[type=email]', 'admin@nhjs.demo');
+await page.fill('input[type=password]', 'Admin-EduTrack-2026!demo');
+await Promise.all([page.waitForURL(/dashboard/, { timeout: 20000 }), page.click('button[type=submit]')]);
+await page.waitForTimeout(6000);
+console.log('URL', page.url());
+console.log('has skeletons:', await page.locator('.skeleton-shimmer, [class*=animate-pulse]').count());
+console.log('main text:', (await page.locator('#main-content').innerText().catch(() => '')).slice(0, 200));
+await page.screenshot({ path: '/home/user/design-review/10-mobile-debug.png' });
+await browser.close();

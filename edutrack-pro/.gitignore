@@ -1,0 +1,67 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# secrets & environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# build output
+dist/
+build/
+out/
+.next/
+.turbo/
+*.tsbuildinfo
+coverage/
+
+# prisma / local db
+prisma/*.db
+prisma/*.db-journal
+*.sqlite
+pgdata/
+
+# local file storage (dev upload driver)
+storage/
+uploads/
+private-uploads/
+apps/api/storage/
+
+# logs
+*.log
+npm-debug.log*
+logs/
+
+# mobile
+apps/mobile/.expo/
+apps/mobile/android/
+apps/mobile/ios/
+apps/mobile/web-build/
+
+# local operator scratch data (session tokens, captured API shapes)
+scratch/.tokens.json
+scratch/.screen-tokens.json
+scratch/api-shapes.json
+
+# test artifacts
+test-results/
+playwright-report/
+apps/api/test/.tmp/
+# dedicated build dir used by the browser suite (next build with NEXT_DIST_DIR)
+.cache/
+# fixture written by e2e/seed.mjs on every run (throwaway school in the test database)
+apps/web/e2e/.seed.json
+# uploads written by the API test suite when STORAGE_DRIVER=local
+apps/api/.test-storage/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json

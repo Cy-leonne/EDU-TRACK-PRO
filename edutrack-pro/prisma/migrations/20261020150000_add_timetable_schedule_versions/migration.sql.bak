@@ -1,0 +1,64 @@
+CREATE TABLE "TimetableScheduleVersion" (
+    "id" TEXT NOT NULL,
+    "schoolId" TEXT NOT NULL,
+    "academicYearId" TEXT NOT NULL,
+    "termId" TEXT,
+    "classId" TEXT,
+    "versionNumber" INTEGER NOT NULL,
+    "isCurrent" BOOLEAN NOT NULL DEFAULT true,
+    "notes" TEXT,
+    "createdById" TEXT,
+    "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
+
+    CONSTRAINT "TimetableScheduleVersion_pkey" PRIMARY KEY ("id")
+);
+
+ALTER TABLE "TimetablePeriod"
+    ADD COLUMN "scheduleVersionId" TEXT NOT NULL;
+
+ALTER TABLE "TimetableVersion"
+    ADD COLUMN "scheduleVersionId" TEXT;
+
+ALTER TABLE "TimetableScheduleVersion"
+    ADD CONSTRAINT "TimetableScheduleVersion_schoolId_fkey"
+    FOREIGN KEY ("schoolId") REFERENCES "School"("id")
+    ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE "TimetableScheduleVersion"
+    ADD CONSTRAINT "TimetableScheduleVersion_academicYearId_fkey"
+    FOREIGN KEY ("academicYearId") REFERENCES "AcademicYear"("id")
+    ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE "TimetableScheduleVersion"
+    ADD CONSTRAINT "TimetableScheduleVersion_termId_fkey"
+    FOREIGN KEY ("termId") REFERENCES "Term"("id")
+    ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE "TimetableScheduleVersion"
+    ADD CONSTRAINT "TimetableScheduleVersion_classId_fkey"
+    FOREIGN KEY ("classId") REFERENCES "Class"("id")
+    ON DELETE CASCADE ON UPDATE CASCADE;
+
+ALTER TABLE "TimetableScheduleVersion"
+    ADD CONSTRAINT "TimetableScheduleVersion_createdById_fkey"
+    FOREIGN KEY ("createdById") REFERENCES "User"("id")
+    ON DELETE SET NULL ON UPDATE CASCADE;
+
+ALTER TABLE "TimetablePeriod"
+    ADD CONSTRAINT "TimetablePeriod_scheduleVersionId_fkey"
+    FOREIGN KEY ("scheduleVersionId") REFERENCES "TimetableScheduleVersion"("id")
+    ON DELETE RESTRICT ON UPDATE CASCADE;
+
+ALTER TABLE "TimetableVersion"
+    ADD CONSTRAINT "TimetableVersion_scheduleVersionId_fkey"
+    FOREIGN KEY ("scheduleVersionId") REFERENCES "TimetableScheduleVersion"("id")
+    ON DELETE SET NULL ON UPDATE CASCADE;
+
+CREATE INDEX "TimetableScheduleVersion_schoolId_academicYearId_termId_classId_isCurrent_idx"
+    ON "TimetableScheduleVersion"("schoolId", "academicYearId", "termId", "classId", "isCurrent");
+
+CREATE UNIQUE INDEX "TimetablePeriod_scheduleVersionId_dayOfWeek_sequence_key"
+    ON "TimetablePeriod"("scheduleVersionId", "dayOfWeek", "sequence");
+
+CREATE INDEX "TimetablePeriod_schoolId_academicYearId_idx"
+    ON "TimetablePeriod"("schoolId", "academicYearId");

@@ -1,0 +1,61 @@
+{
+  "name": "edutrack-pro",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EduTrack Pro - Kenyan Junior School assessment, learning and timetable platform",
+  "workspaces": [
+    "packages/*",
+    "apps/api",
+    "apps/web"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "postinstall": "npm run -s prisma:generate",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate deploy",
+    "prisma:migrate:dev": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "db:reset": "prisma migrate reset --force",
+    "db:seed": "ts-node -P prisma/tsconfig.seed.json prisma/seed.ts",
+    "setup:admin": "ts-node -P prisma/tsconfig.seed.json scripts/create-admin.ts",
+    "dev": "npm-run-all --parallel dev:api dev:web",
+    "dev:api": "npm run -w @edutrack/api start:dev",
+    "dev:web": "npm run -w @edutrack/web dev",
+    "build": "npm run -w @edutrack/api build && npm run -w @edutrack/web build",
+    "start:api": "npm run -w @edutrack/api start:prod",
+    "start:web": "npm run -w @edutrack/web start",
+    "typecheck": "npm run -w @edutrack/api typecheck && npm run -w @edutrack/web typecheck && npm run -s mobile:typecheck",
+    "lint": "npm run -w @edutrack/api lint && npm run -w @edutrack/web lint",
+    "test": "npm run -w @edutrack/api test",
+    "test:api": "npm run -w @edutrack/api test",
+    "test:integration": "npm run -w @edutrack/api test:integration",
+    "test:e2e": "npm run -w @edutrack/api test:e2e",
+    "test:all": "npm run -w @edutrack/api test:all",
+    "verify": "npm run typecheck && npm run lint && npm run test:all",
+"build:packages": "npm run build -w @edutrack/shared-config && npm run build -w @edutrack/shared-types && npm run build -w @edutrack/validation",
+    "predev": "npm run -s build:packages",
+    "prebuild": "npm run -s build:packages",
+    "pretest": "npm run -s build:packages",
+    "mobile:install": "npm --prefix apps/mobile install",
+    "mobile:start": "npm --prefix apps/mobile run start",
+    "mobile:android": "npm --prefix apps/mobile run android",
+    "mobile:ios": "npm --prefix apps/mobile run ios",
+    "mobile:typecheck": "npm --prefix apps/mobile run typecheck",
+    "test:e2e:web": "npm --prefix apps/web run e2e",
+    "e2e:install": "npx playwright install --with-deps chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1",
+    "npm-run-all": "^4.1.5",
+    "prisma": "^5.22.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
+  },
+  "prisma": {
+    "seed": "ts-node -P prisma/tsconfig.seed.json prisma/seed.ts"
+  },
+  "comment@workspaces": "apps/mobile manages its own dependency tree - React Native must not be hoisted above the app's babel config. See docs/mobile.md."
+}

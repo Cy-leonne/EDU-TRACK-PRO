@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    // `nest build` deletes the output directory but keeps the incremental build
+    // info, which makes tsc skip emitting files it believes are already written.
+    // Turning incremental off for production builds keeps `dist/` complete.
+    "incremental": false,
+    "declaration": false,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]
+}

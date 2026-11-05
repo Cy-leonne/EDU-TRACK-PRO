@@ -1,0 +1,72 @@
+# Local development services for EduTrack Pro.
+# Usage: docker compose up -d
+# The API and web app normally run on the host (npm run dev) for fast reloads;
+# uncomment the api/web services to run the whole stack in containers.
+version: "3.9"
+
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: edutrack-pro-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: edutrack
+      POSTGRES_PASSWORD: edutrack_dev_password
+      POSTGRES_DB: edutrack_pro
+      TZ: Africa/Nairobi
+    ports: ["5432:5432"]
+    volumes:
+      - edutrack-db-data:/var/lib/postgresql/data
+      - ./scripts/init-test-db.sql:/docker-entrypoint-initdb.d/10-init-test-db.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U edutrack -d edutrack_pro"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  redis:
+    image: redis:7-alpine
+    container_name: edutrack-pro-redis
+    restart: unless-stopped
+    # Only needed when QUEUE_ENABLED=true (asynchronous timetable generation)
+    ports: ["6379:6379"]
+    profiles: ["queue"]
+
+  # MailHog captures optional email notifications during development
+  mail:
+    image: mailhog/mailhog:latest
+    container_name: edutrack-pro-mail
+    restart: unless-stopped
+    ports: ["1025:1025", "8025:8025"]
+    profiles: ["email"]
+
+  # ----------------------------------------------------------------------
+  # Optional containerised application services (profile: full)
+  # ----------------------------------------------------------------------
+  api:
+    build:
+      context: .
+      dockerfile: apps/api/Dockerfile
+    container_name: edutrack-pro-api
+    profiles: ["full"]
+    depends_on:
+      db: { condition: service_healthy }
+    env_file: [.env]
+    environment:
+      DATABASE_URL: postgresql://edutrack:edutrack_dev_password@db:5432/edutrack_pro?schema=public
+    ports: ["4000:4000"]
+
+  web:
+    build:
+      context: .
+      dockerfile: apps/web/Dockerfile
+    container_name: edutrack-pro-web
+    profiles: ["full"]
+    depends_on: [api]
+    env_file: [.env]
+    environment:
+      NEXT_PUBLIC_API_URL: http://localhost:4000/api/v1
+    ports: ["3000:3000"]
+
+volumes:
+  edutrack-db-data:

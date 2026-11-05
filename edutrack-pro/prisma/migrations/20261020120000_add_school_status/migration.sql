@@ -1,0 +1,10 @@
+DO $$
+BEGIN
+    CREATE TYPE "SchoolStatus" AS ENUM ('ACTIVE', 'SUSPENDED', 'ARCHIVED');
+EXCEPTION
+    WHEN duplicate_object THEN NULL;
+END
+$$;
+
+ALTER TABLE "School"
+ADD COLUMN IF NOT EXISTS "status" "SchoolStatus" NOT NULL DEFAULT 'ACTIVE';
