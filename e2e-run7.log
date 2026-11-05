@@ -1,0 +1,259 @@
+[WebServer] 
+[WebServer] > @edutrack/web@1.0.0 e2e:serve
+[WebServer] > next build && next start -p 4100 -H 127.0.0.1
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer] 
+
+[WebServer]    Creating an optimized production build ...
+
+[WebServer]  ✓ Compiled successfully
+
+[WebServer]    Skipping linting
+[WebServer]    Checking validity of types ...
+
+[WebServer]    Collecting page data ...
+
+[WebServer]    Generating static pages (0/34) ...
+
+[WebServer]    Generating static pages (8/34) 
+
+[WebServer]    Generating static pages (16/34) 
+
+[WebServer]    Generating static pages (25/34) 
+
+[WebServer]  ✓ Generating static pages (34/34)
+
+[WebServer]    Finalizing page optimization ...
+
+[WebServer]    Collecting build traces ...
+
+[WebServer] 
+
+[WebServer] Route (app)                              Size     First Load JS
+[WebServer] ┌ ○ /                                    3.43 kB         107 kB
+[WebServer] ├ ○ /_not-found                          876 B          88.1 kB
+[WebServer] ├ ○ /academics/assignments               5.54 kB         117 kB
+[WebServer] ├ ○ /academics/calendar                  3.55 kB         107 kB
+[WebServer] ├ ○ /academics/classes                   5.34 kB         108 kB
+[WebServer] ├ ○ /academics/learning-areas            5.76 kB         109 kB
+[WebServer] ├ ○ /account                             5.41 kB         135 kB
+[WebServer] ├ ○ /activate                            4.8 kB          117 kB
+[WebServer] ├ ƒ /api/v1/[...path]                    0 B                0 B
+[WebServer] ├ ○ /audit                               3.46 kB         107 kB
+[WebServer] ├ ○ /dashboard                           7.72 kB         120 kB
+[WebServer] ├ ○ /family                              3.62 kB         116 kB
+[WebServer] ├ ○ /family/assignments                  6.24 kB         109 kB
+[WebServer] ├ ○ /family/notifications                3.19 kB         132 kB
+[WebServer] ├ ○ /family/resources                    5.1 kB          108 kB
+[WebServer] ├ ○ /family/results                      3.93 kB         107 kB
+[WebServer] ├ ○ /family/timetable                    2.86 kB         109 kB
+[WebServer] ├ ○ /login                               7.14 kB         119 kB
+[WebServer] ├ ○ /people/learners                     6.44 kB         118 kB
+[WebServer] ├ ○ /people/parents                      5.29 kB         108 kB
+[WebServer] ├ ○ /people/teachers                     6.27 kB         109 kB
+[WebServer] ├ ○ /register                            7.18 kB         119 kB
+[WebServer] ├ ○ /register/parent                     5.14 kB         117 kB
+[WebServer] ├ ○ /reports                             5.12 kB         117 kB
+[WebServer] ├ ○ /reset-password                      4.06 kB         116 kB
+[WebServer] ├ ○ /settings/assessment                 5.24 kB         108 kB
+[WebServer] ├ ○ /settings/school                     5.96 kB         109 kB
+[WebServer] ├ ○ /teaching/assessments                5.34 kB         117 kB
+[WebServer] ├ ƒ /teaching/assessments/[id]           9.45 kB         121 kB
+[WebServer] ├ ○ /teaching/classes                    3.28 kB         115 kB
+[WebServer] ├ ○ /teaching/resources                  6.41 kB         118 kB
+[WebServer] ├ ○ /teaching/submissions                6.38 kB         118 kB
+[WebServer] ├ ○ /teaching/timetable                  2.35 kB         108 kB
+[WebServer] ├ ○ /timetable                           8.39 kB         120 kB
+[WebServer] └ ƒ /timetable/[versionId]               5.85 kB         121 kB
+[WebServer] + First Load JS shared by all            87.3 kB
+[WebServer]   ├ chunks/1528-3f19e898dfad5355.js      31.7 kB
+[WebServer]   ├ chunks/1dd3208c-c871fa9375d4de2a.js  53.6 kB
+[WebServer]   └ other shared chunks (total)          1.9 kB
+[WebServer] 
+
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer]   - Local:        http://127.0.0.1:4100
+[WebServer]   - Network:      http://127.0.0.1:4100
+[WebServer] 
+[WebServer]  ✓ Starting...
+
+[WebServer]  ✓ Ready in 285ms
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "edutrack_pro_test", schema "public" at "localhost:5432"
+
+3 migrations found in prisma/migrations
+
+
+No pending migrations to apply.
+E2E fixtures -> http://127.0.0.1:4101
+  • school cmvaxpaql001rnvbregdmglht
+  • calendar cmvaxparq002gnvbrfagc7dkh / cmvaxpas6002lnvbra05jsi4m
+  • learning area cmvaxpasq002pnvbryrqwbmjb
+  • teacher cmvaxpau10031nvbrbzlfhryj (via invitation)
+  • class cmvaxpauo0035nvbr76lsv36b
+  • bell schedule: true
+  • learners 3
+  • assessment cmvaxpaxs0055nvbrl33jwm25
+  • assessment published: true
+  • verified link cmvaxpb39006cnvbrf5acoudd for cmvaxpaw4004envbrvfzoi8y7
+  • guardians created (cmvaxpb190063nvbrkj50ae2u + stranger)
+Fixture creation finished with 0 failed call(s) — wrote /home/user/edutrack-pro/apps/web/e2e/.seed.json
+
+Running 46 tests using 1 worker
+
+[1/46] [desktop] › e2e/auth.spec.ts:12:7 › Authentication and onboarding › the sign-in page offers no demonstration credentials and calls the policy endpoint
+[2/46] [desktop] › e2e/auth.spec.ts:31:7 › Authentication and onboarding › rejects a wrong password without revealing whether the account exists
+[3/46] [desktop] › e2e/auth.spec.ts:46:7 › Authentication and onboarding › signs in, routes by role, and signs out (server-side revocation)
+[4/46] [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others
+  1) [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected value: 200
+    Received array: [401, 403]
+
+      78 |     // and the refusal is not merely a hidden navigation item.
+      79 |     const teacherToken = (await api.login(fixtures.credentials.teacher.email, fixtures.credentials.teacher.password)) as string;
+    > 80 |     expect([401, 403]).toContain((await api.get('/teachers', teacherToken)).status);
+         |                        ^
+      81 |     await page.goto('/people/teachers');
+      82 |     await expect(page.locator('#main-content')).toContainText(/permission|denied|not allowed|forbidden/i);
+      83 |
+        at /home/user/edutrack-pro/apps/web/e2e/auth.spec.ts:80:24
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[5/46] [desktop] › e2e/auth.spec.ts:92:7 › Authentication and onboarding › an expired or tampered session returns to sign-in with a clear reason
+[6/46] [desktop] › e2e/auth.spec.ts:107:7 › Authentication and onboarding › forgotten-password answers identically for known and unknown addresses
+[7/46] [desktop] › e2e/auth.spec.ts:124:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use
+[8/46] [desktop] › e2e/auth.spec.ts:186:7 › Authentication and onboarding › the public reset page never confirms whether an address is registered
+[9/46] [desktop] › e2e/auth.spec.ts:200:7 › Authentication and onboarding › a school-registration page validates before it submits anything
+[10/46] [desktop] › e2e/auth.spec.ts:217:7 › Authentication and onboarding › an invalid invitation link is explained, not silently accepted
+[11/46] [desktop] › e2e/auth.spec.ts:222:7 › Authentication and onboarding › guardian registration explains that verification is required
+[12/46] [desktop] › e2e/privacy.spec.ts:8:7 › Authorisation and school/family isolation › a guardian can never read another family’s learner
+[13/46] [desktop] › e2e/privacy.spec.ts:28:7 › Authorisation and school/family isolation › a teacher cannot reach unrelated classes, publish, or manage accounts
+[14/46] [desktop] › e2e/privacy.spec.ts:46:7 › Authorisation and school/family isolation › a guardian cannot modify school data even with a valid school id
+[15/46] [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters
+[16/46] [desktop] › e2e/privacy.spec.ts:73:7 › Authorisation and school/family isolation › tampered ids and guessed file urls reveal nothing
+[17/46] [desktop] › e2e/privacy.spec.ts:88:7 › Authorisation and school/family isolation › school isolation: a second school cannot see the first school’s data
+[18/46] [desktop] › e2e/privacy.spec.ts:109:7 › Authorisation and school/family isolation › administrators are never created into an existing school without an invitation
+[19/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit phone (390px)
+[20/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone
+[21/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on phone
+[22/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit tablet (834px)
+[23/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on tablet
+[24/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on tablet
+[25/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit desktop (1440px)
+[26/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on desktop
+[27/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on desktop
+[28/46] [desktop] › e2e/responsive.spec.ts:82:7 › Accessibility basics › every form control on the public pages has an accessible name and a visible focus ring
+[29/46] [desktop] › e2e/responsive.spec.ts:104:7 › Accessibility basics › keyboard tabbing reaches the sign-in form and the skip link works
+[30/46] [desktop] › e2e/responsive.spec.ts:120:7 › Accessibility basics › status is never communicated by colour alone
+[31/46] [desktop] › e2e/responsive.spec.ts:129:7 › Accessibility basics › motion is suppressed when the user prefers reduced motion
+[32/46] [desktop] › e2e/responsive.spec.ts:141:7 › Accessibility basics › the sign-in page respects a high-contrast, no-image rendering
+[33/46] [desktop] › e2e/ui.spec.ts:13:7 › UI interactions › sidebar navigation reaches every admin area and marks the active item
+[34/46] [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen
+[35/46] [desktop] › e2e/ui.spec.ts:38:7 › UI interactions › a table supports search, and destructive actions require confirmation
+[36/46] [desktop] › e2e/ui.spec.ts:59:7 › UI interactions › a modal form keeps its validation visible and reports API errors
+[37/46] [desktop] › e2e/ui.spec.ts:73:7 › UI interactions › the verification queue lets the office verify a learner link
+[38/46] [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows
+[39/46] [desktop] › e2e/ui.spec.ts:102:7 › UI interactions › notifications open, and the bell reflects the unread state
+[40/46] [desktop] › e2e/ui.spec.ts:113:7 › UI interactions › signing out from the account menu returns to sign-in and blocks the dashboard
+[41/46] [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist
+[42/46] [desktop] › e2e/workflows.spec.ts:83:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian
+[43/46] [desktop] › e2e/workflows.spec.ts:153:7 › Database-backed workflows (UI → API → database → UI) › guardian switches learners; unverified links expose no records
+[44/46] [desktop] › e2e/workflows.spec.ts:179:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged)
+  2) [desktop] › e2e/workflows.spec.ts:179:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged) 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 404
+
+      227 |     if (published.status === 201) {
+      228 |       const history = await api.get(`/timetables/${timetables[0].id}/history`, adminToken);
+    > 229 |       expect(history.status).toBe(200);
+          |                              ^
+      230 |       // A published week is immutable.
+      231 |       const move = await api.patch('/timetables/entries/move', { entryId: 'non-existent-entry', targetDayOfWeek: 2, targetPeriodId: 'non-existent-period' }, adminToken);
+      232 |       expect(move.status).toBeGreaterThanOrEqual(400);
+        at /home/user/edutrack-pro/apps/web/e2e/workflows.spec.ts:229:30
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[45/46] [desktop] › e2e/workflows.spec.ts:236:7 › Database-backed workflows (UI → API → database → UI) › teacher uploads a resource and a submission; both are retrievable by an authorised caller only
+[46/46] [desktop] › e2e/workflows.spec.ts:269:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted
+  3) [desktop] › e2e/workflows.spec.ts:269:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted 
+
+    Error: expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [200, 201, 204]
+
+      291 |       const unread = rows.find((row) => !row.readAt) ?? rows[0];
+      292 |       const marked = await api.post(`/notifications/${unread.id}/read`, {}, parentToken);
+    > 293 |       expect([200, 201, 204]).toContain(marked.status);
+          |                               ^
+      294 |       const after = await api.get('/notifications', parentToken);
+      295 |       const updated = ((after.data?.items ?? after.data ?? []) as Array<{ id: string; readAt: string | null }>).find((row) => row.id === unread.id);
+      296 |       expect(updated?.readAt).toBeTruthy();
+        at /home/user/edutrack-pro/apps/web/e2e/workflows.spec.ts:293:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  3 failed
+    [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others 
+    [desktop] › e2e/workflows.spec.ts:179:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged) 
+    [desktop] › e2e/workflows.spec.ts:269:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted 
+  43 passed (1.4m)
+EXIT=1

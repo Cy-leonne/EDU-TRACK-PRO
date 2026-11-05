@@ -1,0 +1,850 @@
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [NestFactory] Starting Nest application...
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] PrismaModule dependencies initialized +22ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] CsvModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] AuditModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] TenancyModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] AuditControllerModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] HealthModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] SchoolModule dependencies initialized +2ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] LearningAreasModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] ReportsModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] ClassesModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] AssignmentsModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] ThrottlerModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] JwtModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] NotificationsModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] AppModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] SubmissionsModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] ResourcesModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] TimetablesModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] FilesModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] AssessmentsModule dependencies initialized +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] PeopleModule dependencies initialized +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] DashboardsModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:49 PM     LOG [InstanceLoader] AuthModule dependencies initialized +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] NotificationsController {/api/v1/notifications}: +277ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications, GET} route +2ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/unread-count, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/preferences, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/preferences, PATCH} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/retry-failed-emails, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/:id/read, PATCH} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/read-all, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] AuthController {/api/v1/auth}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/setup-status, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/setup/first-admin, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/login, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/refresh, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/logout, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/me, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/change, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/forgot, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/reset, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/register/school, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/register/parent, POST} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/preview, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/accept, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/:id/revoke, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/accounts/:userId/password-reset-link, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/accounts/:userId/status, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/logout-all, POST} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/parent/link-request, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] SchoolController {/api/v1/school}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/bootstrap, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/profile, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/profile, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years/:id, PATCH} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms/:id/results-publication, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/school/grades, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] PeopleController {/api/v1}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id, DELETE} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id/reset-password, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/import/template, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/import, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parents, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parents, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parents/:id, PATCH} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parents/:id/reset-password, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id/verify, POST} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id, DELETE} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id/correction-request, POST} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learners, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/:id, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learners, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/:id, PATCH} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/import/template, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/import, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] ClassesController {/api/v1/classes}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id/learners, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments/bulk, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/validation/enrollments, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] LearningAreasController {/api/v1/learning-areas}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/template, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/import-template, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/strands, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/strands, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/sub-strands, POST} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements, POST} route +2ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements/bulk, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] AssignmentsController {/api/v1/teacher-assignments}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/me, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/coverage, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/availability/:teacherId, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/availability, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] SubmissionsController {/api/v1/submissions}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/summary/:assignmentId, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id/review, PATCH} route +6ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] FilesController {/api/v1/files}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/files/policy, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/files/upload, POST} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id/download, GET} route +2ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id/meta, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] AssessmentsController {/api/v1/assessments}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/categories, GET} route +2ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/categories, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/achievement-levels, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/achievement-levels, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/rubrics, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/rubrics, POST} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/dashboard, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/status, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/publish, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/resources, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/resources/:resourceId, DELETE} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/resources/upload, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] ResultsController {/api/v1/results}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/grid/:assessmentId, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/grid/:assessmentId, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/feedback, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/:id/amend, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/:id/history, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/learner/:learnerId, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/results/learner/:learnerId/progress, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] ResourcesController {/api/v1/resources}: +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/assignments, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/assignments, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] TimetablesController {/api/v1/timetables}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods/default, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/rooms, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/rooms, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/preflight, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/generate, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/:versionId/validate, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/:versionId/conflicts, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables, GET} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/me, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/learner/:learnerId, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/school-grid, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/timetables/:timetableId/history, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/entries, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/move, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/:entryId/lock, PATCH} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/:entryId, DELETE} route +1ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/publish, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/unpublish, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/duplicate, POST} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/timetables/:timetableId, DELETE} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] DashboardsController {/api/v1}: +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/admin, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/teacher, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/parent, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/school, GET} route +0ms
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] AuditController {/api/v1/audit-logs}: +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/audit-logs, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/audit-logs/actions, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] ExportsController {/api/v1/reports/export}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/learners.csv, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/teachers.csv, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/results.csv, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/timetable.csv, GET} route +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RoutesResolver] HealthController {/api/v1/health}: +0ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [RouterExplorer] Mapped {/health, GET} route +1ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [PrismaService] Database connection established
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [NestApplication] Nest application successfully started +3ms
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [Bootstrap] API listening on http://0.0.0.0:4101/api/v1
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [Bootstrap] OpenAPI docs: http://localhost:4101/api/v1/docs
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:11:50 PM     LOG [Bootstrap] Storage driver: local | Email provider: console
+
+[WebServer] 
+[WebServer] > @edutrack/web@1.0.0 e2e:serve
+[WebServer] > next build && next start -p 4100 -H 127.0.0.1
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer] 
+
+[WebServer]    Creating an optimized production build ...
+
+[WebServer]  ✓ Compiled successfully
+
+[WebServer]    Skipping linting
+[WebServer]    Checking validity of types ...
+
+[WebServer]    Collecting page data ...
+
+[WebServer]    Generating static pages (0/34) ...
+
+[WebServer]    Generating static pages (8/34) 
+
+[WebServer]    Generating static pages (16/34) 
+
+[WebServer]    Generating static pages (25/34) 
+
+[WebServer]  ✓ Generating static pages (34/34)
+
+[WebServer]    Finalizing page optimization ...
+
+[WebServer]    Collecting build traces ...
+
+[WebServer] 
+
+[WebServer] Route (app)                              Size     First Load JS
+[WebServer] ┌ ○ /                                    3.43 kB         107 kB
+[WebServer] ├ ○ /_not-found                          876 B          88.1 kB
+[WebServer] ├ ○ /academics/assignments               5.54 kB         117 kB
+[WebServer] ├ ○ /academics/calendar                  3.55 kB         107 kB
+[WebServer] ├ ○ /academics/classes                   5.34 kB         108 kB
+[WebServer] ├ ○ /academics/learning-areas            5.76 kB         109 kB
+[WebServer] ├ ○ /account                             5.41 kB         135 kB
+[WebServer] ├ ○ /activate                            4.8 kB          117 kB
+[WebServer] ├ ƒ /api/v1/[...path]                    0 B                0 B
+[WebServer] ├ ○ /audit                               3.46 kB         107 kB
+[WebServer] ├ ○ /dashboard                           7.72 kB         120 kB
+[WebServer] ├ ○ /family                              3.62 kB         116 kB
+[WebServer] ├ ○ /family/assignments                  6.24 kB         109 kB
+[WebServer] ├ ○ /family/notifications                3.19 kB         132 kB
+[WebServer] ├ ○ /family/resources                    5.1 kB          108 kB
+[WebServer] ├ ○ /family/results                      3.93 kB         107 kB
+[WebServer] ├ ○ /family/timetable                    2.86 kB         109 kB
+[WebServer] ├ ○ /login                               7.14 kB         119 kB
+[WebServer] ├ ○ /people/learners                     6.44 kB         118 kB
+[WebServer] ├ ○ /people/parents                      5.29 kB         108 kB
+[WebServer] ├ ○ /people/teachers                     6.27 kB         109 kB
+[WebServer] ├ ○ /register                            7.18 kB         119 kB
+[WebServer] ├ ○ /register/parent                     5.14 kB         117 kB
+[WebServer] ├ ○ /reports                             5.12 kB         117 kB
+[WebServer] ├ ○ /reset-password                      4.06 kB         116 kB
+[WebServer] ├ ○ /settings/assessment                 5.24 kB         108 kB
+[WebServer] ├ ○ /settings/school                     5.96 kB         109 kB
+[WebServer] ├ ○ /teaching/assessments                5.34 kB         117 kB
+[WebServer] ├ ƒ /teaching/assessments/[id]           9.45 kB         121 kB
+[WebServer] ├ ○ /teaching/classes                    3.28 kB         115 kB
+[WebServer] ├ ○ /teaching/resources                  6.41 kB         118 kB
+[WebServer] ├ ○ /teaching/submissions                6.38 kB         118 kB
+[WebServer] ├ ○ /teaching/timetable                  2.35 kB         108 kB
+[WebServer] ├ ○ /timetable                           8.39 kB         120 kB
+[WebServer] └ ƒ /timetable/[versionId]               5.85 kB         121 kB
+[WebServer] + First Load JS shared by all            87.3 kB
+[WebServer]   ├ chunks/1528-3f19e898dfad5355.js      31.7 kB
+[WebServer]   ├ chunks/1dd3208c-c871fa9375d4de2a.js  53.6 kB
+[WebServer]   └ other shared chunks (total)          1.9 kB
+[WebServer] 
+
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer]   - Local:        http://127.0.0.1:4100
+[WebServer]   - Network:      http://127.0.0.1:4100
+[WebServer] 
+[WebServer]  ✓ Starting...
+
+[WebServer]  ✓ Ready in 327ms
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "edutrack_pro_test", schema "public" at "localhost:5432"
+
+3 migrations found in prisma/migrations
+
+
+No pending migrations to apply.
+E2E fixtures -> http://127.0.0.1:4101
+  • school cmvaxguv00001yc1361cdr6sg
+  • calendar cmvaxguwz000qyc13h1w5wygz / cmvaxguxq000vyc13g8mjy29t
+  • learning area cmvaxguyl000zyc13kf98dgjg
+  • teacher cmvaxgv09001byc13h7mlvth6 (via invitation)
+  • class cmvaxgv11001fyc13togt8cti
+  • bell schedule: true
+  • learners 3
+  • assessment cmvaxgv5h003fyc134fiwchxk
+  • assessment published: true
+  • guardians created (cmvaxgva2004dyc13bxxmb2ml + stranger)
+Fixture creation finished with 0 failed call(s) — wrote /home/user/edutrack-pro/apps/web/e2e/.seed.json
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:18 PM     LOG [PasswordService] Password hashing backend: argon2id
+
+
+Running 46 tests using 1 worker
+
+[1/46] [desktop] › e2e/auth.spec.ts:12:7 › Authentication and onboarding › the sign-in page offers no demonstration credentials and calls the policy endpoint
+[2/46] [desktop] › e2e/auth.spec.ts:31:7 › Authentication and onboarding › rejects a wrong password without revealing whether the account exists
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:21 PM    WARN [ExceptionFilter] [f7c482f7-53ad-4cf1-8575-f5daf8db7aee] POST /api/v1/auth/login -> 401: "Incorrect email or password."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:21 PM    WARN [ExceptionFilter] [326dea9c-3875-4c93-ab90-7e9f2e58d4a7] POST /api/v1/auth/login -> 401: "Incorrect email or password."
+
+[3/46] [desktop] › e2e/auth.spec.ts:46:7 › Authentication and onboarding › signs in, routes by role, and signs out (server-side revocation)
+[4/46] [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others
+  1) [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others 
+
+    Error: expect(locator).toContainText(expected) failed
+
+    Locator: locator('#main-content')
+    Expected pattern: /permission|denied|not allowed/i
+    Received string:  "LearnersThe learner register for Grades 7–9. Learners are records, not users — they never sign in. Import from CSV Register learnerRegisterThe admission number must be unique. The assessment number is a school record and is never used on its own to prove who a guardian is.All gradesGrade 7Grade 8Grade 9All classesAny statusActiveTransferredGraduatedWithdrawnSuspendedNo learners match these filtersAdjust the filters, or register a learner or import the class register from CSV.Learner records are protected: results and resources are only released to guardians whose link the school has verified."
+    Timeout: 10000ms
+
+    Call log:
+      - Expect "toContainText" locator('#main-content') with timeout 10000ms
+      - waiting for locator('#main-content')
+        2 × locator resolved to <main id="main-content" class="mx-auto w-full max-w-7xl flex-1 px-3 py-4 sm:px-5 sm:py-6">…</main>
+          - unexpected value "LearnersThe learner register for Grades 7–9. Learners are records, not users — they never sign in. Import from CSV Register learnerRegisterThe admission number must be unique. The assessment number is a school record and is never used on its own to prove who a guardian is.All gradesAll classesAny statusActiveTransferredGraduatedWithdrawnSuspendedLearner records are protected: results and resources are only released to guardians whose link the school has verified."
+        21 × locator resolved to <main id="main-content" class="mx-auto w-full max-w-7xl flex-1 px-3 py-4 sm:px-5 sm:py-6">…</main>
+           - unexpected value "LearnersThe learner register for Grades 7–9. Learners are records, not users — they never sign in. Import from CSV Register learnerRegisterThe admission number must be unique. The assessment number is a school record and is never used on its own to prove who a guardian is.All gradesGrade 7Grade 8Grade 9All classesAny statusActiveTransferredGraduatedWithdrawnSuspendedNo learners match these filtersAdjust the filters, or register a learner or import the class register from CSV.Learner records are protected: results and resources are only released to guardians whose link the school has verified."
+
+
+      82 |     // reports it instead of pretending the list is empty.
+      83 |     await page.goto('/people/learners');
+    > 84 |     await expect(page.locator('#main-content')).toContainText(/permission|denied|not allowed/i);
+         |                                                 ^
+      85 |   });
+      86 |
+      87 |   test('an expired or tampered session returns to sign-in with a clear reason', async ({ page, fixtures }) => {
+        at /home/user/edutrack-pro/apps/web/e2e/auth.spec.ts:84:49
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[5/46] [desktop] › e2e/auth.spec.ts:87:7 › Authentication and onboarding › an expired or tampered session returns to sign-in with a clear reason
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:37 PM    WARN [ExceptionFilter] [303f5736-36e6-452e-a563-af259e87c31e] GET /api/v1/auth/me -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:37 PM    WARN [ExceptionFilter] [867b548c-a698-4409-ba55-d6b607b000c0] POST /api/v1/auth/refresh -> 401: "Your session has expired. Please sign in again."
+
+[6/46] [desktop] › e2e/auth.spec.ts:102:7 › Authentication and onboarding › forgotten-password answers identically for known and unknown addresses
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:38 PM     LOG [NotificationsService] Email notification skipped (EMAIL_PROVIDER=console) for type=ACCOUNT; 1 in-app notification(s) created.
+
+[7/46] [desktop] › e2e/auth.spec.ts:119:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use
+  2) [desktop] › e2e/auth.spec.ts:119:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 201
+    Received: 200
+
+      135 |     expect(guardian).toBeTruthy();
+      136 |     const issued = await api.post(`/auth/accounts/${guardian!.userId}/password-reset-link`, {}, adminToken);
+    > 137 |     expect(issued.status).toBe(201);
+          |                           ^
+      138 |     const resetUrl = new URL(issued.data.resetUrl as string);
+      139 |
+      140 |     // Complete the reset in the browser.
+        at /home/user/edutrack-pro/apps/web/e2e/auth.spec.ts:137:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[8/46] [desktop] › e2e/auth.spec.ts:181:7 › Authentication and onboarding › the public reset page never confirms whether an address is registered
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:40 PM     LOG [NotificationsService] Email notification skipped (EMAIL_PROVIDER=console) for type=ACCOUNT; 1 in-app notification(s) created.
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:40 PM    WARN [ExceptionFilter] [f03ee399-b75e-43b1-81e3-c8b82a01fa13] POST /api/v1/auth/password/reset -> 400: "This reset link is invalid or has expired. Request a new one."
+
+[9/46] [desktop] › e2e/auth.spec.ts:195:7 › Authentication and onboarding › a school-registration page validates before it submits anything
+[10/46] [desktop] › e2e/auth.spec.ts:212:7 › Authentication and onboarding › an invalid invitation link is explained, not silently accepted
+[11/46] [desktop] › e2e/auth.spec.ts:217:7 › Authentication and onboarding › guardian registration explains that verification is required
+[12/46] [desktop] › e2e/privacy.spec.ts:8:7 › Authorisation and school/family isolation › a guardian can never read another family’s learner
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [c55bbc31-facf-475c-8806-3ec339efc0de] GET /api/v1/results/learner/cmvaxgv2s002oyc13ftmutb3d -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [8a255cbd-c1b5-4931-b910-a1a127969b15] GET /api/v1/learners/cmvaxgv2s002oyc13ftmutb3d -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [aace093c-47f1-49f7-a27a-073575bf53bf] GET /api/v1/results/learner/cmvaxgv2s002oyc13ftmutb3d -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [da45ef2c-186e-4eb2-b87c-993ecc1b55ae] GET /api/v1/timetables/learner/cmvaxgv2s002oyc13ftmutb3d -> 403: "This learner is not linked to your account."
+
+[13/46] [desktop] › e2e/privacy.spec.ts:28:7 › Authorisation and school/family isolation › a teacher cannot reach unrelated classes, publish, or manage accounts
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [02f7c635-9bef-4644-bb0d-1a4dc23f20b1] POST /api/v1/auth/invitations -> 401: "Your account is missing the required permission: user:manage"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [3fbc6f9b-a645-46bd-be9a-e27d1d0e3440] POST /api/v1/learners -> 401: "Your account is missing the required permission: learner:manage"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [bb6dbe3e-bd7d-48f4-bedc-8167c3bd4c04] GET /api/v1/dashboard/parent -> 403: "No parent profile is linked to your account."
+
+[14/46] [desktop] › e2e/privacy.spec.ts:46:7 › Authorisation and school/family isolation › a guardian cannot modify school data even with a valid school id
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [96c53e4f-88e1-42cc-890d-9bc6c2bd015c] PATCH /api/v1/learners/cmvaxgv2s002oyc13ftmutb3d -> 401: "Your account is missing the required permission: learner:manage"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [d8ded04f-d281-4b2a-bf2d-1c644656cbb3] POST /api/v1/classes -> 401: "Your account is missing the required permission: class:manage"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [55fc78c2-6149-4321-a6b0-ef65c6830715] POST /api/v1/parent-links -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [1e96ba14-f2cb-432e-a602-81eac20b00d4] PATCH /api/v1/parent-links/anything -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [ef321e06-e0df-4dd6-86bc-995b2ce515d5] POST /api/v1/timetables/publish -> 401: "Your account is missing the required permission: timetable:publish"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [0433d663-14d2-4989-9b2e-f63a11cce173] POST /api/v1/teacher-assignments -> 401: "Your account is missing the required permission: assignment:manage"
+
+[15/46] [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [f4624c68-87b9-4a6d-a02b-43c4f42af036] GET /api/v1/auth/me -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [9ca13d4b-3ce4-4744-b8ac-101eeb2f8d86] GET /api/v1/learners -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [1287daa8-757b-4686-8b04-6250c8329a28] GET /api/v1/teachers -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [20b05795-6f17-4181-bbc7-a08c89d02f74] GET /api/v1/notifications -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [25ef513f-5afd-4a3c-8943-43924365f06e] GET /api/v1/timetables -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [99459130-0d1b-481e-9551-b3608cb5b1ab] GET /api/v1/reports/export/learners.csv -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:43 PM    WARN [ExceptionFilter] [8b7d467c-f047-4453-8dbc-1991ae0c6c64] GET /api/v1/audit -> 404: "Cannot GET /api/v1/audit"
+
+  3) [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters 
+
+    Error: /audit must require authentication
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [401, 403]
+
+      67 |     for (const path of ['/auth/me', '/learners', '/teachers', '/notifications', '/timetables', '/reports/export/learners.csv', '/audit']) {
+      68 |       const result = await api.get(path);
+    > 69 |       expect([401, 403], `${path} must require authentication`).toContain(result.status);
+         |                                                                 ^
+      70 |     }
+      71 |   });
+      72 |
+        at /home/user/edutrack-pro/apps/web/e2e/privacy.spec.ts:69:65
+
+    Error Context: test-results/privacy-Authorisation-and--9529b-sed-everywhere-that-matters-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/privacy-Authorisation-and--9529b-sed-everywhere-that-matters-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/privacy-Authorisation-and--9529b-sed-everywhere-that-matters-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[16/46] [desktop] › e2e/privacy.spec.ts:73:7 › Authorisation and school/family isolation › tampered ids and guessed file urls reveal nothing
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [a22c9017-fe8b-412e-aca5-db32b3ff35ad] GET /api/v1/learners/ckzzzzzzzzzzzzzzzzzzzzzz -> 404: "Learner not found"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [e7ba15d6-dd14-46a5-a5f4-90bcf8154952] GET /storage/anything.pdf -> 404: "Cannot GET /storage/anything.pdf"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [5be6a1d4-5436-40b1-ba2d-17b4d14402d6] GET /uploads/anything.pdf -> 404: "Cannot GET /uploads/anything.pdf"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [11157c90-e8d1-4e7b-970f-0f203a1ce2c4] GET /files/00000000-0000-0000-0000-000000000000/download -> 404: "Cannot GET /files/00000000-0000-0000-0000-000000000000/download"
+
+[17/46] [desktop] › e2e/privacy.spec.ts:88:7 › Authorisation and school/family isolation › school isolation: a second school cannot see the first school’s data
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [4246ce14-d0fe-491d-806d-258bd1bc8614] GET /api/v1/learners/cmvaxgv2s002oyc13ftmutb3d -> 404: "Learner not found"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [4390a44a-2969-472d-9963-4c8839c387d2] GET /api/v1/results/learner/cmvaxgv2s002oyc13ftmutb3d -> 404: "Learner not found"
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [161df5ab-cc51-42ad-9dde-30316b3f632e] GET /api/v1/classes/cmvaxgv11001fyc13togt8cti -> 404: "Class not found"
+
+[18/46] [desktop] › e2e/privacy.spec.ts:109:7 › Authorisation and school/family isolation › administrators are never created into an existing school without an invitation
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [285bc3cd-62f4-4941-b681-e591d897f4b7] POST /api/v1/auth/register/school -> 403: "That setup token is not valid."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [cb681c32-a257-435f-b5a9-0319b01b20ce] POST /api/v1/auth/register/parent -> 400: "We could not find a school with that code. Check the letter from the school office, or call them for help."
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:12:44 PM    WARN [ExceptionFilter] [b192c27e-7683-4787-8990-726fab88b62a] POST /api/v1/auth/invitations/accept -> 400: "This invitation link is no longer valid. Ask the school office to send a new one."
+
+[19/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit phone (390px)
+[20/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone
+  4) [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone 
+
+    Error: document should not scroll horizontally (offenders: div.space-y-4, div.overflow-hidden.rounded-lg.border, div.flex.flex-wrap.items-start, div.min-w-0)
+
+    expect(received).toBeLessThanOrEqual(expected)
+
+    Expected: <= 392
+    Received:    654
+
+      29 |     overflow.documentWidth,
+      30 |     `document should not scroll horizontally (offenders: ${overflow.offenders.join(', ')})`,
+    > 31 |   ).toBeLessThanOrEqual(overflow.viewportWidth + 2);
+         |     ^
+      32 | }
+      33 |
+      34 | test.describe('Responsive layout', () => {
+        at expectNoHorizontalOverflow (/home/user/edutrack-pro/apps/web/e2e/responsive.spec.ts:31:5)
+        at /home/user/edutrack-pro/apps/web/e2e/responsive.spec.ts:64:9
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[21/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on phone
+[22/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit tablet (834px)
+[23/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on tablet
+[24/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on tablet
+[25/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit desktop (1440px)
+[26/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on desktop
+[27/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on desktop
+[28/46] [desktop] › e2e/responsive.spec.ts:82:7 › Accessibility basics › every form control on the public pages has an accessible name and a visible focus ring
+[29/46] [desktop] › e2e/responsive.spec.ts:104:7 › Accessibility basics › keyboard tabbing reaches the sign-in form and the skip link works
+[30/46] [desktop] › e2e/responsive.spec.ts:120:7 › Accessibility basics › status is never communicated by colour alone
+[31/46] [desktop] › e2e/responsive.spec.ts:129:7 › Accessibility basics › motion is suppressed when the user prefers reduced motion
+[32/46] [desktop] › e2e/responsive.spec.ts:141:7 › Accessibility basics › the sign-in page respects a high-contrast, no-image rendering
+[33/46] [desktop] › e2e/ui.spec.ts:13:7 › UI interactions › sidebar navigation reaches every admin area and marks the active item
+[34/46] [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen
+  5) [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByLabel('Search learners')
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByLabel('Search learners') with timeout 10000ms
+      - waiting for getByLabel('Search learners')
+
+
+      31 |   test('the top bar exposes search and the account menu, and search reaches a screen', async ({ page }) => {
+      32 |     const search = page.getByLabel('Search learners');
+    > 33 |     await expect(search).toBeVisible();
+         |                          ^
+      34 |     await search.fill('learners');
+      35 |     await expect(page.getByRole('link', { name: /learners/i }).first()).toBeVisible();
+      36 |   });
+        at /home/user/edutrack-pro/apps/web/e2e/ui.spec.ts:33:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[35/46] [desktop] › e2e/ui.spec.ts:38:7 › UI interactions › a table supports search, and destructive actions require confirmation
+[36/46] [desktop] › e2e/ui.spec.ts:59:7 › UI interactions › a modal form keeps its validation visible and reports API errors
+[37/46] [desktop] › e2e/ui.spec.ts:73:7 › UI interactions › the verification queue lets the office verify a learner link
+[38/46] [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows
+  6) [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows 
+
+    Error: expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 1
+    Received:    0
+
+      90 |     const switcher = page.getByRole('button', { name: /verified link|awaiting verification/i });
+      91 |     const count = await switcher.count();
+    > 92 |     expect(count).toBeGreaterThanOrEqual(1);
+         |                   ^
+      93 |     if (count > 1) {
+      94 |       await switcher.nth(1).click();
+      95 |       await expect(switcher.nth(1)).toHaveAttribute('aria-pressed', 'true');
+        at /home/user/edutrack-pro/apps/web/e2e/ui.spec.ts:92:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[39/46] [desktop] › e2e/ui.spec.ts:101:7 › UI interactions › notifications open, and the bell reflects the unread state
+[40/46] [desktop] › e2e/ui.spec.ts:112:7 › UI interactions › signing out from the account menu returns to sign-in and blocks the dashboard
+[41/46] [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist
+  7) [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByText('Mwangixibz7').first()
+    Expected: visible
+    Timeout: 10000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByText('Mwangixibz7').first() with timeout 10000ms
+      - waiting for getByText('Mwangixibz7').first()
+
+
+      56 |     await page.getByLabel(/^Last name/).fill(`Mwangi${stamp}`);
+      57 |     await page.getByRole('dialog').getByRole('button', { name: /^(save|save changes|register|add|create)/i }).last().click();
+    > 58 |     await expect(page.getByText(`Mwangi${stamp}`).first()).toBeVisible();
+         |                                                            ^
+      59 |
+      60 |     // Refetch with a filter — the row has to come back from the server.
+      61 |     const filtered = await api.get(`/learners?search=Mwangi${stamp}`, adminToken);
+        at /home/user/edutrack-pro/apps/web/e2e/workflows.spec.ts:58:60
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[42/46] [desktop] › e2e/workflows.spec.ts:82:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian
+[WebServer] [Nest] 7768  - 10/16/2026, 12:13:43 PM     LOG [NotificationsService] Email notification skipped (EMAIL_PROVIDER=console) for type=ASSESSMENT_PUBLISHED; 1 in-app notification(s) created.
+
+[WebServer] [Nest] 7768  - 10/16/2026, 12:13:43 PM    WARN [ExceptionFilter] [6cd5dc00-aefa-4728-8a22-95c6c0247c88] GET /api/v1/results/learner/cmvaxgv2s002oyc13ftmutb3d -> 403: "This learner is not linked to your account."
+
+  8) [desktop] › e2e/workflows.spec.ts:82:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: 200
+    Received: 403
+
+      142 |     const parentToken = await api.login(fixtures.credentials.parent.email, fixtures.credentials.parent.password);
+      143 |     const parentResults = await api.get(`/results/learner/${fixtures.learnerIds[0]}`, parentToken);
+    > 144 |     expect(parentResults.status).toBe(200);
+          |                                  ^
+      145 |     expect(JSON.stringify(parentResults.data)).toContain(assessmentId);
+      146 |
+      147 |     const strangerToken = await api.login(fixtures.credentials.stranger.email, fixtures.credentials.stranger.password);
+        at /home/user/edutrack-pro/apps/web/e2e/workflows.spec.ts:144:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[43/46] [desktop] › e2e/workflows.spec.ts:152:7 › Database-backed workflows (UI → API → database → UI) › guardian switches learners; unverified links expose no records
+[WebServer] [Nest] 7768  - 10/16/2026, 12:13:46 PM    WARN [ExceptionFilter] [61ec72e8-9e3f-49ac-ba28-23c86f1c9964] GET /api/v1/results/learner/cmvaxgv2s002oyc13ftmutb3d -> 403: "This learner is not linked to your account."
+
+[44/46] [desktop] › e2e/workflows.spec.ts:178:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged)
+  9) [desktop] › e2e/workflows.spec.ts:178:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged) 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      205 |     const list = await api.get('/timetables?pageSize=50', adminToken);
+      206 |     const timetables = (list.data?.items ?? list.data ?? []) as Array<{ id: string; currentVersionId?: string | null }>;
+    > 207 |     expect(timetables.length).toBeGreaterThan(0);
+          |                               ^
+      208 |     const versionId = timetables.find((row) => row.currentVersionId)?.currentVersionId ?? null;
+      209 |     expect(versionId, 'generation must store a version').toBeTruthy();
+      210 |
+        at /home/user/edutrack-pro/apps/web/e2e/workflows.spec.ts:207:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[45/46] [desktop] › e2e/workflows.spec.ts:228:7 › Database-backed workflows (UI → API → database → UI) › teacher uploads a resource and a submission; both are retrievable by an authorised caller only
+[WebServer] [Nest] 7768  - 10/16/2026, 12:13:50 PM    WARN [ExceptionFilter] [045bf6c0-2026-43c3-bfd1-fd23a0ad8780] GET /api/v1/files?purpose=RESOURCE -> 404: "Cannot GET /api/v1/files?purpose=RESOURCE"
+
+[46/46] [desktop] › e2e/workflows.spec.ts:261:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted
+  9 failed
+    [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others 
+    [desktop] › e2e/auth.spec.ts:119:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use 
+    [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters 
+    [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone 
+    [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen 
+    [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows 
+    [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist 
+    [desktop] › e2e/workflows.spec.ts:82:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian 
+    [desktop] › e2e/workflows.spec.ts:178:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged) 
+  37 passed (2.0m)
+EXIT=1

@@ -1,0 +1,249 @@
+
+> edutrack-pro@1.0.0 pretest
+> npm run -s build:packages
+
+
+> edutrack-pro@1.0.0 test
+> npm run -w @edutrack/api test
+
+
+> @edutrack/api@1.0.0 test
+> jest --config jest.config.js --runInBand
+
+PASS test/e2e/journeys.spec.ts
+  End-to-end journeys (1–10)
+    ✓ journey 1 — the first administrator sets up the school and signs in (159 ms)
+    ✓ journey 2 — the administrator creates a teacher, who then signs in and sees an empty but working workspace (293 ms)
+    ✓ journey 3 — the administrator creates the class, imports learners by CSV (dry run first), then links a guardian (299 ms)
+    ✓ journey 4 — the administrator creates the learning area and assigns the teacher (46 ms)
+    ✓ journey 5 — the administrator sets the bell schedule (periods, break, lunch) (30 ms)
+    ✓ journey 6 — the administrator generates, validates, adjusts and publishes the timetable (322 ms)
+    ✓ journey 7 — the teacher sees the timetable, creates an assessment, attaches evidence, enters and publishes results (168 ms)
+    ✓ journey 8 — the guardian sees the published result, the class timetable and their child’s progress (122 ms)
+    ✓ journey 9 — an unrelated guardian is denied the child’s results, timetable and file downloads (111 ms)
+    ✓ journey 10 — the whole chain is auditable and no secrets were ever written out (10 ms)
+
+PASS test/integration/auth-registration.spec.ts
+  Registration, invitations and account lifecycle (integration)
+    school registration
+      ✓ creates the school, its administrator, the Grade 7-9 catalogue and default assessment vocabulary in one transaction (101 ms)
+      ✓ never accepts a mismatched password confirmation and creates nothing (7 ms)
+      ✓ requires the terms to be accepted (2 ms)
+      ✓ can never add an administrator to an EXISTING school, by any unauthenticated route (105 ms)
+      ✓ rejects a duplicate email address and a school code already in use (11 ms)
+      ✓ records the registration in the audit trail without storing a plaintext password (3 ms)
+    teacher invitations
+      ✓ lets an administrator invite a teacher and returns a one-time activation link (10 ms)
+      ✓ does not create a usable account until the invitation is accepted (4 ms)
+      ✓ previews the invitation without leaking the token back (12 ms)
+      ✓ accepts the invitation, sets the teacher password and activates the membership (92 ms)
+      ✓ refuses a second use of the same invitation token (52 ms)
+      ✓ rejects a revoked invitation (20 ms)
+      ✓ will not let a teacher invite anyone (permission enforced on the server) (44 ms)
+      ✓ keeps an invitation bound to the address it was issued for (58 ms)
+    guardian registration and verification
+      ✓ registers a guardian from an invitation and links the learner WITHOUT granting access (110 ms)
+      ✓ registers a guardian with the school code and no learner access at all (97 ms)
+      ✓ lets a guardian request a link with the assessment number + surname, but never confirms the learner exists (65 ms)
+      ✓ exposes learner data only after an administrator verifies the link (63 ms)
+      ✓ publishes the onboarding policy so the sign-in page offers only permitted routes (4 ms)
+      ✓ rejects an invitation addressed to a different person and never creates the account (12 ms)
+    password recovery and account lifecycle
+      ✓ answers a forgotten-password request identically for known and unknown addresses (12 ms)
+      ✓ issues a single-use, time-limited reset token and revokes sessions on completion (178 ms)
+      ✓ lets an administrator deactivate an account, which immediately blocks sign-in (87 ms)
+      ✓ refuses to let an administrator deactivate their own account (9 ms)
+      ✓ signs an account out of every device on request (47 ms)
+
+PASS test/integration/notification-preferences.spec.ts
+  Notification preferences (integration)
+    ✓ returns defaults for a user who has never opened the screen (7 ms)
+    ✓ refuses to enable email without an address (4 ms)
+    ✓ accepts an email address and enables email when the deployment cannot send yet (5 ms)
+    ✓ stores muted event types and rejects unknown ones (7 ms)
+    ✓ keeps preferences personal: the teacher sees their own, unmuted defaults (4 ms)
+    ✓ really stops writing inbox rows when in-app notifications are switched off (55 ms)
+    ✓ delivers again as soon as in-app notifications are switched back on (51 ms)
+    ✓ never exposes another user’s notifications (240 ms)
+    ✓ reports the unread count the header badge uses (15 ms)
+
+PASS test/integration/assessments-results.spec.ts
+  Assessment lifecycle and results (integration)
+    ✓ lets the assigned teacher create a draft assessment (26 ms)
+    ✓ refuses an assessment for a class the teacher does not teach (27 ms)
+    ✓ validates the assessment payload (marks target required when marks are used) (3 ms)
+    ✓ uploads a PDF to private storage and attaches it as evidence (28 ms)
+    ✓ moves the assessment through draft → ready for review (19 ms)
+    ✓ saves a draft results grid and rejects a mark above the maximum (43 ms)
+    ✓ hides unpublished results from the parent (9 ms)
+    ✓ publishes the assessment, notifies guardians and exposes results to the linked parent only (281 ms)
+    ✓ locks resources once the assessment is published (5 ms)
+    ✓ appends a narrative comment to a published result so guardians see teacher feedback (31 ms)
+    ✓ amends a published result only with a reason, and keeps an immutable history (48 ms)
+    ✓ shows the assessment dashboard counts for the term (10 ms)
+    ✓ denies parents the ability to enter or publish results (5 ms)
+
+PASS test/integration/files.spec.ts
+  Secure file storage (integration)
+    ✓ publishes the upload policy for client-side pickers (4 ms)
+    ✓ accepts a real PDF and a real PNG (14 ms)
+    ✓ rejects an executable disguised as a PDF (content sniffing, not extensions) (7 ms)
+    ✓ rejects a PNG renamed to .pdf (signature and name must agree) (4 ms)
+    ✓ rejects a file larger than the configured limit (197 ms)
+    ✓ streams an authorised download with safe headers and never a public URL (17 ms)
+    ✓ refuses an unauthenticated download and hides files from other schools (248 ms)
+    ✓ keeps an assignment-only document away from an unlinked parent until it is published (93 ms)
+    ✓ will not delete a file while a live resource references it, but frees it once archived (54 ms)
+    ✓ never stores the original path traversal in an object key (7 ms)
+
+PASS test/integration/people-and-enrollment.spec.ts
+  People, classes and enrollment (integration)
+    ✓ rejects a malformed learner payload with field-level errors (5 ms)
+    ✓ creates a teacher with a staff number and workload caps (50 ms)
+    ✓ rejects a duplicate staff e-mail (no duplicate accounts) (4 ms)
+    ✓ never lets a teacher create staff accounts (2 ms)
+    ✓ stores teacher availability as a full weekly grid and reads it back (36 ms)
+    ✓ creates learners, refuses duplicate admission numbers, and finds them by search (21 ms)
+    ✓ enrolls a learner into a class and blocks double enrollment in the same term (28 ms)
+    ✓ bulk-enrolls learners and reports the class roll (58 ms)
+    ✓ creates a parent, links them to a learner, and keeps the link unverified until an admin verifies it (79 ms)
+    ✓ refuses to link a parent from another school to this school’s learner (248 ms)
+    ✓ protects learner records from parents who are not linked to them (20 ms)
+
+PASS test/integration/auth-and-isolation.spec.ts
+  Auth + school isolation (integration)
+    ✓ rejects an unauthenticated request (3 ms)
+    ✓ rejects a wrong password with a generic message (no account enumeration) (45 ms)
+    ✓ signs a user in and returns their role, school and permissions (38 ms)
+    ✓ rotates the refresh token and revokes the whole family when a token is replayed (59 ms)
+    ✓ never exposes password hashes or secrets through the API (5 ms)
+    ✓ hides another school’s learners, classes and teachers (13 ms)
+    ✓ returns 404 (not 403) when another school’s record id is requested by an administrator (8 ms)
+    ✓ refuses to let a parent read a learner from another school (5 ms)
+    ✓ refuses cross-role escalated calls (14 ms)
+    ✓ records an audit trail entry for administrative actions (21 ms)
+
+PASS test/integration/exports.spec.ts
+  CSV exports (integration)
+    ✓ lets an administrator download the learner register as a CSV attachment (14 ms)
+    ✓ neutralises spreadsheet formula injection in exported cells (10 ms)
+    ✓ refuses a teacher and a guardian, and tells them why (5 ms)
+    ✓ never mixes another school’s rows into an export (12 ms)
+    ✓ writes an audited, reviewable entry for each export (9 ms)
+    ✓ uses the school’s own achievement band in the results export (6 ms)
+    ✓ exports the timetable only from a published version, or says there is none (6 ms)
+    ✓ caps row counts so an export cannot become an unbounded data dump (8 ms)
+    ✓ keeps credentials out of every export (17 ms)
+    ✓ escapes quotes, commas and newlines so a spreadsheet parses the file correctly
+
+PASS test/integration/submissions.spec.ts
+  Assignment submissions (integration)
+    ✓ lets the assigned teacher publish an assignment for their class (18 ms)
+    ✓ accepts a hand-in from the linked guardian, with a file and who submitted it (30 ms)
+    ✓ never exposes the hand-in to a different school (14 ms)
+    ✓ refuses a hand-in for a learner the guardian is not linked to (6 ms)
+    ✓ refuses a hand-in with neither a file, a link nor a note (3 ms)
+    ✓ shows the hand-in to the teacher who owns the class, with a completion summary (12 ms)
+    ✓ lets the teacher return the work with a reason the guardian can read (22 ms)
+    ✓ refuses to return work without a reason (3 ms)
+    ✓ lets the guardian resubmit after a return and then the teacher accept it (37 ms)
+    ✓ refuses to hand in over an acceptance (the teacher must return it first) (9 ms)
+    ✓ notifies the guardians in-app when work is reviewed (6 ms)
+    ✓ records the workflow in the audit trail (1 ms)
+    ✓ refuses a submitter from another school entirely (4 ms)
+
+PASS test/unit/timetable-generator.spec.ts
+  TimetableGenerator — hard constraints (unit)
+    ✓ places every required lesson when the configuration is feasible (42 ms)
+    ✓ never double-books a class (37 ms)
+    ✓ never double-books a teacher (15 ms)
+    ✓ never schedules a lesson in a break, lunch or non-teaching period (25 ms)
+    ✓ keeps every lesson inside the configured school day (17 ms)
+    ✓ respects teacher availability windows (22 ms)
+    ✓ respects the class daily lesson cap (15 ms)
+    ✓ never exceeds a teacher’s weekly workload limit (31 ms)
+    ✓ never exceeds a teacher’s daily limit (21 ms)
+    ✓ reports actionable diagnostics when a lesson has no teacher assigned (13 ms)
+    ✓ explains why lessons could not be placed (never silently drops them) (20 ms)
+    ✓ is deterministic: the same configuration always produces the same timetable (28 ms)
+    ✓ produces a different arrangement when the tie-break seed changes (29 ms)
+    ✓ spreads a learning area across different days instead of stacking it (15 ms)
+
+[32m[Nest] 39338  - [39m10/16/2026, 12:43:26 PM [32m    LOG[39m [38;5;3m[PasswordService] [39m[32mPassword hashing backend: argon2id[39m
+PASS test/unit/password.service.spec.ts
+  PasswordService (unit)
+    ✓ hashes a password with a self-describing algorithm prefix (38 ms)
+    ✓ verifies the correct password and rejects a wrong one (105 ms)
+    ✓ produces a different hash for the same password (per-password salt) (33 ms)
+    ✓ fails closed on an unknown or malformed hash instead of throwing (2 ms)
+
+PASS test/unit/file-validation.spec.ts
+  Upload validation (unit)
+    ✓ accepts a real PDF (2 ms)
+    ✓ accepts JPEG and PNG images (camera uploads from the mobile app)
+    ✓ rejects an executable disguised with a document extension (21 ms)
+    ✓ rejects a script extension outright (1 ms)
+    ✓ rejects a type that is not on the allow-list (1 ms)
+    ✓ rejects a file whose declared MIME type contradicts its contents (1 ms)
+    ✓ rejects files above the configured size limit (1 ms)
+    ✓ rejects empty uploads
+    ✓ sanitises the display name and never lets it become a storage path
+
+PASS test/unit/validation.spec.ts
+  Shared validation schemas (unit)
+    password policy
+      ✓ accepts a strong password and rejects weak ones (1 ms)
+    login
+      ✓ normalises the email and defaults the client type to WEB (1 ms)
+    school calendar
+      ✓ requires the end date to be after the start date
+      ✓ accepts a term inside the year and rejects an out-of-range term number
+    school profile
+      ✓ applies Kenyan defaults when the school is created (1 ms)
+      ✓ rejects a closing time that is not after the opening time
+      ✓ allows partial profile updates (PATCH) without re-sending the whole profile (1 ms)
+    learner
+      ✓ trims the admission number and requires a usable name
+    assessment and results
+      ✓ accepts valid marks and rejects negative or non-numeric entry (4 ms)
+      ✓ refuses a result that is both absent and excused (1 ms)
+      ✓ requires rubric criteria to be unique and positively weighted
+    parent self-link
+      ✓ always requires a second verifier besides the assessment number (1 ms)
+    learning resources and assignments
+      ✓ requires a file for FILE resources and a URL for LINK resources (1 ms)
+      ✓ refuses an assignment due date in the past only when explicitly disallowed by the caller
+
+PASS test/unit/permissions.spec.ts
+  Role permission matrix (unit)
+    ✓ exactly three roles exist and each has a non-empty permission set (1 ms)
+    ✓ only grants permissions that exist in the catalogue (7 ms)
+    ✓ gives administrators every administrative capability (1 ms)
+    ✓ never lets a teacher publish a timetable, manage users or read the audit log (1 ms)
+    ✓ never lets a parent see drafts, enter marks or read staff data
+    ✓ keeps the three roles distinct — no role is a superset of another (1 ms)
+    ✓ gives every role the timetable read access its UI needs
+    ✓ gives parents read access to published results and resources only
+
+PASS test/unit/timetable-validator.spec.ts
+  validateTimetable — hard constraint detection (unit)
+    ✓ reports no conflicts for a clean timetable (1 ms)
+    ✓ detects a class double-booked in the same period (1 ms)
+    ✓ detects a teacher double-booked across classes
+    ✓ detects a room double-booking when rooms are used (1 ms)
+    ✓ detects a lesson placed in a break period
+    ✓ detects a lesson outside school hours (1 ms)
+    ✓ detects a lesson on a day the school does not open
+    ✓ detects a teacher scheduled when they are unavailable
+    ✓ detects a weekly workload breach (1 ms)
+    ✓ detects an under-allocated learning area
+    ✓ detects a lesson whose teacher is not assigned to that class and area (1 ms)
+    ✓ flags a learner enrolled in two classes that are timetabled at the same time
+    ✓ summarises conflicts by code and severity for the UI conflict panel
+
+Test Suites: 15 passed, 15 total
+Tests:       173 passed, 173 total
+Snapshots:   0 total
+Time:        13.805 s, estimated 134 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

@@ -1,0 +1,1524 @@
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [NestFactory] Starting Nest application...
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] PrismaModule dependencies initialized +22ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] CsvModule dependencies initialized +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +2ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] AuditModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] TenancyModule dependencies initialized +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] AuditControllerModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] HealthModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] SchoolModule dependencies initialized +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] LearningAreasModule dependencies initialized +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] ReportsModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] ClassesModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] AssignmentsModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] ThrottlerModule dependencies initialized +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] JwtModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] NotificationsModule dependencies initialized +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] AppModule dependencies initialized +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] SubmissionsModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] ResourcesModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] TimetablesModule dependencies initialized +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] FilesModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] AssessmentsModule dependencies initialized +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] PeopleModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] DashboardsModule dependencies initialized +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [InstanceLoader] AuthModule dependencies initialized +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] NotificationsController {/api/v1/notifications}: +242ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications, GET} route +9ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/unread-count, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/preferences, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/preferences, PATCH} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/retry-failed-emails, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/:id/read, PATCH} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/read-all, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] AuthController {/api/v1/auth}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/setup-status, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/setup/first-admin, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/login, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/refresh, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/logout, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/me, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/change, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/forgot, POST} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/reset, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/register/school, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/register/parent, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/preview, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/accept, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/:id/revoke, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/accounts/:userId/password-reset-link, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/accounts/:userId/status, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/logout-all, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/parent/link-request, POST} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] SchoolController {/api/v1/school}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/bootstrap, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/profile, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/profile, PATCH} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years/:id, PATCH} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms, POST} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms/:id/results-publication, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/school/grades, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] PeopleController {/api/v1}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id, PATCH} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id, DELETE} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id/reset-password, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/import/template, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/import, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parents, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parents, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parents/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parents/:id/reset-password, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id/verify, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id, PATCH} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id, DELETE} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id/correction-request, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learners, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/:id, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learners, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/import/template, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/import, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] ClassesController {/api/v1/classes}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, PATCH} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id/learners, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments/bulk, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments/:id, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/validation/enrollments, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] LearningAreasController {/api/v1/learning-areas}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas, GET} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/:id, PATCH} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/:id, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/template, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/import-template, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/strands, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/strands, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/sub-strands, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements, POST} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements/bulk, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements/:id, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] AssignmentsController {/api/v1/teacher-assignments}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/:id, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/me, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/coverage, GET} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/availability/:teacherId, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/availability, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RoutesResolver] SubmissionsController {/api/v1/submissions}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/summary/:assignmentId, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:40 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id/review, PATCH} route +8ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] FilesController {/api/v1/files}: +3ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/files/policy, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/files/upload, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id/download, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id/meta, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id, DELETE} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] AssessmentsController {/api/v1/assessments}: +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/categories, GET} route +2ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/categories, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/achievement-levels, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/achievement-levels, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/rubrics, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/rubrics, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/dashboard, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/status, POST} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/publish, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/resources, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/resources/:resourceId, DELETE} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/resources/upload, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] ResultsController {/api/v1/results}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/grid/:assessmentId, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/grid/:assessmentId, POST} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/feedback, POST} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/:id/amend, PATCH} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/:id/history, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/learner/:learnerId, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/results/learner/:learnerId/progress, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] ResourcesController {/api/v1/resources}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/assignments, GET} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/assignments, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] TimetablesController {/api/v1/timetables}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods/default, GET} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/rooms, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/rooms, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/preflight, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/generate, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/:versionId/validate, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/:versionId/conflicts, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables, GET} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/me, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/learner/:learnerId, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/school-grid, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/timetables/:timetableId/history, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/entries, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/move, PATCH} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/:entryId/lock, PATCH} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/:entryId, DELETE} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/publish, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/unpublish, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/duplicate, POST} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/timetables/:timetableId, DELETE} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] DashboardsController {/api/v1}: +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/admin, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/teacher, GET} route +1ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/parent, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/school, GET} route +0ms
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] AuditController {/api/v1/audit-logs}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/audit-logs, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/audit-logs/actions, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] ExportsController {/api/v1/reports/export}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/learners.csv, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/teachers.csv, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/results.csv, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/timetable.csv, GET} route +1ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RoutesResolver] HealthController {/api/v1/health}: +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [RouterExplorer] Mapped {/health, GET} route +0ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [PrismaService] Database connection established
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [NestApplication] Nest application successfully started +3ms
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [Bootstrap] API listening on http://0.0.0.0:4101/api/v1
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [Bootstrap] OpenAPI docs: http://localhost:4101/api/v1/docs
+[WebServer] [Nest] 5727  - 10/16/2026, 12:09:41 PM     LOG [Bootstrap] Storage driver: local | Email provider: console
+
+[WebServer] 
+[WebServer] > @edutrack/web@1.0.0 e2e:serve
+[WebServer] > next build && next start -p 4100 -H 127.0.0.1
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer] 
+
+[WebServer]    Creating an optimized production build ...
+
+[WebServer]  ✓ Compiled successfully
+
+[WebServer]    Skipping linting
+
+[WebServer]    Checking validity of types ...
+
+[WebServer]    Collecting page data ...
+
+[WebServer]    Generating static pages (0/34) ...
+
+[WebServer]    Generating static pages (8/34) 
+
+[WebServer]    Generating static pages (16/34) 
+
+[WebServer]    Generating static pages (25/34) 
+
+[WebServer]  ✓ Generating static pages (34/34)
+
+[WebServer]    Finalizing page optimization ...
+
+[WebServer]    Collecting build traces ...
+
+[WebServer] 
+
+[WebServer] Route (app)                              Size     First Load JS
+[WebServer] ┌ ○ /                                    3.43 kB         107 kB
+[WebServer] ├ ○ /_not-found                          876 B          88.1 kB
+[WebServer] ├ ○ /academics/assignments               5.54 kB         117 kB
+[WebServer] ├ ○ /academics/calendar                  3.55 kB         107 kB
+[WebServer] ├ ○ /academics/classes                   5.34 kB         108 kB
+[WebServer] ├ ○ /academics/learning-areas            5.76 kB         109 kB
+[WebServer] ├ ○ /account                             5.41 kB         135 kB
+[WebServer] ├ ○ /activate                            4.8 kB          117 kB
+[WebServer] ├ ƒ /api/v1/[...path]                    0 B                0 B
+[WebServer] ├ ○ /audit                               3.46 kB         107 kB
+[WebServer] ├ ○ /dashboard                           7.72 kB         120 kB
+[WebServer] ├ ○ /family                              3.62 kB         116 kB
+[WebServer] ├ ○ /family/assignments                  6.24 kB         109 kB
+[WebServer] ├ ○ /family/notifications                3.19 kB         132 kB
+[WebServer] ├ ○ /family/resources                    5.1 kB          108 kB
+[WebServer] ├ ○ /family/results                      3.93 kB         107 kB
+[WebServer] ├ ○ /family/timetable                    2.86 kB         109 kB
+[WebServer] ├ ○ /login                               7.14 kB         119 kB
+[WebServer] ├ ○ /people/learners                     6.44 kB         118 kB
+[WebServer] ├ ○ /people/parents                      5.29 kB         108 kB
+[WebServer] ├ ○ /people/teachers                     6.27 kB         109 kB
+[WebServer] ├ ○ /register                            7.18 kB         119 kB
+[WebServer] ├ ○ /register/parent                     5.14 kB         117 kB
+[WebServer] ├ ○ /reports                             5.12 kB         117 kB
+[WebServer] ├ ○ /reset-password                      4.06 kB         116 kB
+[WebServer] ├ ○ /settings/assessment                 5.24 kB         108 kB
+[WebServer] ├ ○ /settings/school                     5.96 kB         109 kB
+[WebServer] ├ ○ /teaching/assessments                5.34 kB         117 kB
+[WebServer] ├ ƒ /teaching/assessments/[id]           9.45 kB         121 kB
+[WebServer] ├ ○ /teaching/classes                    3.28 kB         115 kB
+[WebServer] ├ ○ /teaching/resources                  6.41 kB         118 kB
+[WebServer] ├ ○ /teaching/submissions                6.38 kB         118 kB
+[WebServer] ├ ○ /teaching/timetable                  2.35 kB         108 kB
+[WebServer] ├ ○ /timetable                           8.39 kB         120 kB
+[WebServer] └ ƒ /timetable/[versionId]               5.85 kB         121 kB
+[WebServer] + First Load JS shared by all            87.3 kB
+[WebServer]   ├ chunks/1528-3f19e898dfad5355.js      31.7 kB
+[WebServer]   ├ chunks/1dd3208c-c871fa9375d4de2a.js  53.6 kB
+[WebServer]   └ other shared chunks (total)          1.9 kB
+[WebServer] 
+
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer]   - Local:        http://127.0.0.1:4100
+
+[WebServer]   - Network:      http://127.0.0.1:4100
+
+[WebServer] 
+
+[WebServer]  ✓ Starting...
+
+[WebServer]  ✓ Ready in 308ms
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "edutrack_pro_test", schema "public" at "localhost:5432"
+
+3 migrations found in prisma/migrations
+
+Applying migration `20261012145357_init`
+Applying migration `20261013144814_assignment_submissions_and_notification_preferences`
+Applying migration `20261016100128_account_invitations`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20261012145357_init/
+    └─ migration.sql
+  └─ 20261013144814_assignment_submissions_and_notification_preferences/
+    └─ migration.sql
+  └─ 20261016100128_account_invitations/
+    └─ migration.sql
+      
+All migrations have been successfully applied.
+E2E fixtures -> http://127.0.0.1:4101
+  • school cmvaxem880001oc0v4fu8y4jd
+  • calendar cmvaxemam000qoc0v9i4ft7nb / cmvaxemba000voc0vqaqi0i94
+  • learning area cmvaxembw000zoc0vy38p7fgl
+  • teacher cmvaxemdp001boc0v5j2wawte (via invitation)
+  • class cmvaxemed001foc0vfrx2xydu
+  • bell schedule: true
+  • learners 3
+  • assessment cmvaxemi7003foc0vuhh72uqj
+  • assessment published: true
+  • guardians created (cmvaxemn2004doc0vbsp63l21 + stranger)
+Fixture creation finished with 0 failed call(s) — wrote /home/user/edutrack-pro/apps/web/e2e/.seed.json
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:33 PM     LOG [PasswordService] Password hashing backend: argon2id
+
+
+Running 46 tests using 1 worker
+
+[1/46] [desktop] › e2e/auth.spec.ts:12:7 › Authentication and onboarding › the sign-in page offers no demonstration credentials and calls the policy endpoint
+  1) [desktop] › e2e/auth.spec.ts:12:7 › Authentication and onboarding › the sign-in page offers no demonstration credentials and calls the policy endpoint 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-6bea7-d-calls-the-policy-endpoint-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-6bea7-d-calls-the-policy-endpoint-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-6bea7-d-calls-the-policy-endpoint-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[2/46] [desktop] › e2e/auth.spec.ts:31:7 › Authentication and onboarding › rejects a wrong password without revealing whether the account exists
+  2) [desktop] › e2e/auth.spec.ts:31:7 › Authentication and onboarding › rejects a wrong password without revealing whether the account exists 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-09e6c--whether-the-account-exists-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-09e6c--whether-the-account-exists-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-09e6c--whether-the-account-exists-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[3/46] [desktop] › e2e/auth.spec.ts:46:7 › Authentication and onboarding › signs in, routes by role, and signs out (server-side revocation)
+  3) [desktop] › e2e/auth.spec.ts:46:7 › Authentication and onboarding › signs in, routes by role, and signs out (server-side revocation) 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-9c559-out-server-side-revocation--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-9c559-out-server-side-revocation--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-9c559-out-server-side-revocation--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[4/46] [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others
+  4) [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-dbc3d-and-cannot-reach-the-others-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[5/46] [desktop] › e2e/auth.spec.ts:87:7 › Authentication and onboarding › an expired or tampered session returns to sign-in with a clear reason
+  5) [desktop] › e2e/auth.spec.ts:87:7 › Authentication and onboarding › an expired or tampered session returns to sign-in with a clear reason 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-5bb64-sign-in-with-a-clear-reason-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-5bb64-sign-in-with-a-clear-reason-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-5bb64-sign-in-with-a-clear-reason-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[6/46] [desktop] › e2e/auth.spec.ts:102:7 › Authentication and onboarding › forgotten-password answers identically for known and unknown addresses
+  6) [desktop] › e2e/auth.spec.ts:102:7 › Authentication and onboarding › forgotten-password answers identically for known and unknown addresses 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-dfe4f-known-and-unknown-addresses-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-dfe4f-known-and-unknown-addresses-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-dfe4f-known-and-unknown-addresses-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[7/46] [desktop] › e2e/auth.spec.ts:119:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use
+  7) [desktop] › e2e/auth.spec.ts:119:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-a6a9d--sessions-and-is-single-use-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[8/46] [desktop] › e2e/auth.spec.ts:181:7 › Authentication and onboarding › the public reset page never confirms whether an address is registered
+  8) [desktop] › e2e/auth.spec.ts:181:7 › Authentication and onboarding › the public reset page never confirms whether an address is registered 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-11f90-er-an-address-is-registered-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-11f90-er-an-address-is-registered-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-11f90-er-an-address-is-registered-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[9/46] [desktop] › e2e/auth.spec.ts:195:7 › Authentication and onboarding › a school-registration page validates before it submits anything
+  9) [desktop] › e2e/auth.spec.ts:195:7 › Authentication and onboarding › a school-registration page validates before it submits anything 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-28b58--before-it-submits-anything-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-28b58--before-it-submits-anything-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-28b58--before-it-submits-anything-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[10/46] [desktop] › e2e/auth.spec.ts:212:7 › Authentication and onboarding › an invalid invitation link is explained, not silently accepted
+  10) [desktop] › e2e/auth.spec.ts:212:7 › Authentication and onboarding › an invalid invitation link is explained, not silently accepted 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-00fd6-ained-not-silently-accepted-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-00fd6-ained-not-silently-accepted-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-00fd6-ained-not-silently-accepted-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[11/46] [desktop] › e2e/auth.spec.ts:217:7 › Authentication and onboarding › guardian registration explains that verification is required
+  11) [desktop] › e2e/auth.spec.ts:217:7 › Authentication and onboarding › guardian registration explains that verification is required 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/auth-Authentication-and-on-8393a-at-verification-is-required-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/auth-Authentication-and-on-8393a-at-verification-is-required-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/auth-Authentication-and-on-8393a-at-verification-is-required-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[12/46] [desktop] › e2e/privacy.spec.ts:8:7 › Authorisation and school/family isolation › a guardian can never read another family’s learner
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [df3e9dd8-0b56-480b-991c-001777bc6c28] GET /api/v1/results/learner/cmvaxemg6002ooc0vrq3116fq -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [1b58edf0-1d00-44e7-8345-ac9cd2581e07] GET /api/v1/learners/cmvaxemg6002ooc0vrq3116fq -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [32e427fd-66b3-4e30-b1ea-b90445bd2808] GET /api/v1/results/learner/cmvaxemg6002ooc0vrq3116fq -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [1973c6b0-9686-470d-8460-2c3286b61bab] GET /api/v1/timetables/learner/cmvaxemg6002ooc0vrq3116fq -> 403: "This learner is not linked to your account."
+
+[13/46] [desktop] › e2e/privacy.spec.ts:28:7 › Authorisation and school/family isolation › a teacher cannot reach unrelated classes, publish, or manage accounts
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [cfaeb961-035a-4c49-937c-361b373de37d] POST /api/v1/auth/invitations -> 401: "Your account is missing the required permission: user:manage"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [ab5cf803-3f80-48d4-ad6d-562924b8aaa3] POST /api/v1/learners -> 401: "Your account is missing the required permission: learner:manage"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [443c3599-0055-4a68-8b8f-f78ecbf69876] GET /api/v1/dashboard/parent -> 403: "No parent profile is linked to your account."
+
+[14/46] [desktop] › e2e/privacy.spec.ts:46:7 › Authorisation and school/family isolation › a guardian cannot modify school data even with a valid school id
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [1423d19c-d4b7-4834-b3d3-c8e6aa741a77] PATCH /api/v1/learners/cmvaxemg6002ooc0vrq3116fq -> 401: "Your account is missing the required permission: learner:manage"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [598a919c-a1f5-4e36-8805-c2f70bfc9e90] POST /api/v1/classes -> 401: "Your account is missing the required permission: class:manage"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [d262c8e8-83f6-4c99-84a3-9109e6ba9295] POST /api/v1/parent-links -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [0f1496d1-6df8-48df-8235-0e17c2a9529a] PATCH /api/v1/parent-links/anything -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [c82ada3d-ef4b-4f02-85d5-fa1aff3f6530] POST /api/v1/timetables/publish -> 401: "Your account is missing the required permission: timetable:publish"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [bbdeafe8-3b58-4cea-9f59-ec94410c26b0] POST /api/v1/teacher-assignments -> 401: "Your account is missing the required permission: assignment:manage"
+
+[15/46] [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [ea08b53d-b5f9-488f-84ba-51df3d5c593b] GET /api/v1/auth/me -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [d277fb53-e70a-418c-8d17-2f2eab056ec2] GET /api/v1/learners -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [4d8b1810-fab3-4df4-9820-390c0949bfef] GET /api/v1/teachers -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [f5766748-7a6a-4ce0-96a1-58480e867081] GET /api/v1/notifications -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [b757a806-ecb6-4d88-9bb5-30e06254a734] GET /api/v1/timetables -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [6777deee-1b83-4874-b6e8-18b4af0f9ac8] GET /api/v1/reports/export/learners.csv -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:43 PM    WARN [ExceptionFilter] [977d5a47-8b42-452f-be0d-a67dc66d07b2] GET /api/v1/audit -> 404: "Cannot GET /api/v1/audit"
+
+  12) [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters 
+
+    Error: /audit must require authentication
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 404
+    Received array: [401, 403]
+
+      67 |     for (const path of ['/auth/me', '/learners', '/teachers', '/notifications', '/timetables', '/reports/export/learners.csv', '/audit']) {
+      68 |       const result = await api.get(path);
+    > 69 |       expect([401, 403], `${path} must require authentication`).toContain(result.status);
+         |                                                                 ^
+      70 |     }
+      71 |   });
+      72 |
+        at /home/user/edutrack-pro/apps/web/e2e/privacy.spec.ts:69:65
+
+    Error Context: test-results/privacy-Authorisation-and--9529b-sed-everywhere-that-matters-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/privacy-Authorisation-and--9529b-sed-everywhere-that-matters-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/privacy-Authorisation-and--9529b-sed-everywhere-that-matters-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[16/46] [desktop] › e2e/privacy.spec.ts:73:7 › Authorisation and school/family isolation › tampered ids and guessed file urls reveal nothing
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [7a309b14-26af-4c2f-aab9-b2b951290fa4] GET /api/v1/learners/ckzzzzzzzzzzzzzzzzzzzzzz -> 404: "Learner not found"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [63a4d122-e03d-40c8-9a76-743537e41347] GET /storage/anything.pdf -> 404: "Cannot GET /storage/anything.pdf"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [01efe8f5-6b4b-46ef-8f22-75974f55c2de] GET /uploads/anything.pdf -> 404: "Cannot GET /uploads/anything.pdf"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [e03392f2-fac5-4079-8aae-9e6b275731f9] GET /files/00000000-0000-0000-0000-000000000000/download -> 404: "Cannot GET /files/00000000-0000-0000-0000-000000000000/download"
+
+[17/46] [desktop] › e2e/privacy.spec.ts:88:7 › Authorisation and school/family isolation › school isolation: a second school cannot see the first school’s data
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [73daec52-d0a4-4501-85bf-549251c62559] GET /api/v1/learners/cmvaxemg6002ooc0vrq3116fq -> 404: "Learner not found"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [aca24b49-a636-4d23-82b7-75a99028854d] GET /api/v1/results/learner/cmvaxemg6002ooc0vrq3116fq -> 404: "Learner not found"
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [b0856a13-ee49-4f03-8fc0-0bb2ba0d5fbd] GET /api/v1/classes/cmvaxemed001foc0vfrx2xydu -> 404: "Class not found"
+
+[18/46] [desktop] › e2e/privacy.spec.ts:109:7 › Authorisation and school/family isolation › administrators are never created into an existing school without an invitation
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [3ea6af7b-dcb0-4d37-9f1b-1968ed166bdf] POST /api/v1/auth/register/school -> 403: "That setup token is not valid."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [c15e8d06-bbe0-46d4-b7f0-d43439b3daa7] POST /api/v1/auth/register/parent -> 400: "We could not find a school with that code. Check the letter from the school office, or call them for help."
+
+[WebServer] [Nest] 5727  - 10/16/2026, 12:10:44 PM    WARN [ExceptionFilter] [1b22e068-8c9f-42a0-9141-025716f8a373] POST /api/v1/auth/invitations/accept -> 400: "This invitation link is no longer valid. Ask the school office to send a new one."
+
+[19/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit phone (390px)
+  13) [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit phone (390px) ─
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layout-public-pages-fit-phone-390px--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layout-public-pages-fit-phone-390px--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layout-public-pages-fit-phone-390px--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[20/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone
+  14) [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-47e46-orkspace-is-usable-on-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[21/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on phone
+  15) [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on phone 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-be3ca-orkspace-is-usable-on-phone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-be3ca-orkspace-is-usable-on-phone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-be3ca-orkspace-is-usable-on-phone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[22/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit tablet (834px)
+  16) [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit tablet (834px) 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layout-public-pages-fit-tablet-834px--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layout-public-pages-fit-tablet-834px--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layout-public-pages-fit-tablet-834px--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[23/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on tablet
+  17) [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on tablet 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-a61de-rkspace-is-usable-on-tablet-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-a61de-rkspace-is-usable-on-tablet-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-a61de-rkspace-is-usable-on-tablet-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[24/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on tablet
+  18) [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on tablet 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-8e9de-rkspace-is-usable-on-tablet-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-8e9de-rkspace-is-usable-on-tablet-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-8e9de-rkspace-is-usable-on-tablet-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[25/46] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit desktop (1440px)
+  19) [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit desktop (1440px) 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-04ded-c-pages-fit-desktop-1440px--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-04ded-c-pages-fit-desktop-1440px--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-04ded-c-pages-fit-desktop-1440px--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[26/46] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on desktop
+  20) [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on desktop 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-93089-kspace-is-usable-on-desktop-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-93089-kspace-is-usable-on-desktop-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-93089-kspace-is-usable-on-desktop-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[27/46] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on desktop
+  21) [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on desktop 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Responsive-layo-13959-kspace-is-usable-on-desktop-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Responsive-layo-13959-kspace-is-usable-on-desktop-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Responsive-layo-13959-kspace-is-usable-on-desktop-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[28/46] [desktop] › e2e/responsive.spec.ts:82:7 › Accessibility basics › every form control on the public pages has an accessible name and a visible focus ring
+  22) [desktop] › e2e/responsive.spec.ts:82:7 › Accessibility basics › every form control on the public pages has an accessible name and a visible focus ring 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Accessibility-b-94aaf-me-and-a-visible-focus-ring-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Accessibility-b-94aaf-me-and-a-visible-focus-ring-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Accessibility-b-94aaf-me-and-a-visible-focus-ring-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[29/46] [desktop] › e2e/responsive.spec.ts:104:7 › Accessibility basics › keyboard tabbing reaches the sign-in form and the skip link works
+  23) [desktop] › e2e/responsive.spec.ts:104:7 › Accessibility basics › keyboard tabbing reaches the sign-in form and the skip link works 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Accessibility-b-48ea4-orm-and-the-skip-link-works-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Accessibility-b-48ea4-orm-and-the-skip-link-works-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Accessibility-b-48ea4-orm-and-the-skip-link-works-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[30/46] [desktop] › e2e/responsive.spec.ts:120:7 › Accessibility basics › status is never communicated by colour alone
+  24) [desktop] › e2e/responsive.spec.ts:120:7 › Accessibility basics › status is never communicated by colour alone 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Accessibility-b-44464-ommunicated-by-colour-alone-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Accessibility-b-44464-ommunicated-by-colour-alone-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Accessibility-b-44464-ommunicated-by-colour-alone-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[31/46] [desktop] › e2e/responsive.spec.ts:129:7 › Accessibility basics › motion is suppressed when the user prefers reduced motion
+  25) [desktop] › e2e/responsive.spec.ts:129:7 › Accessibility basics › motion is suppressed when the user prefers reduced motion 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Accessibility-b-e65c4-user-prefers-reduced-motion-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Accessibility-b-e65c4-user-prefers-reduced-motion-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Accessibility-b-e65c4-user-prefers-reduced-motion-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[32/46] [desktop] › e2e/responsive.spec.ts:141:7 › Accessibility basics › the sign-in page respects a high-contrast, no-image rendering
+  26) [desktop] › e2e/responsive.spec.ts:141:7 › Accessibility basics › the sign-in page respects a high-contrast, no-image rendering 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/responsive-Accessibility-b-d5c9e-contrast-no-image-rendering-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/responsive-Accessibility-b-d5c9e-contrast-no-image-rendering-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/responsive-Accessibility-b-d5c9e-contrast-no-image-rendering-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[33/46] [desktop] › e2e/ui.spec.ts:13:7 › UI interactions › sidebar navigation reaches every admin area and marks the active item
+  27) [desktop] › e2e/ui.spec.ts:13:7 › UI interactions › sidebar navigation reaches every admin area and marks the active item 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-sidebar-72b03-a-and-marks-the-active-item-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-sidebar-72b03-a-and-marks-the-active-item-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-sidebar-72b03-a-and-marks-the-active-item-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[34/46] [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen
+  28) [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-the-top-72ea3-and-search-reaches-a-screen-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[35/46] [desktop] › e2e/ui.spec.ts:38:7 › UI interactions › a table supports search, and destructive actions require confirmation
+  29) [desktop] › e2e/ui.spec.ts:38:7 › UI interactions › a table supports search, and destructive actions require confirmation 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-a-table-17297-ctions-require-confirmation-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-a-table-17297-ctions-require-confirmation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-a-table-17297-ctions-require-confirmation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[36/46] [desktop] › e2e/ui.spec.ts:59:7 › UI interactions › a modal form keeps its validation visible and reports API errors
+  30) [desktop] › e2e/ui.spec.ts:59:7 › UI interactions › a modal form keeps its validation visible and reports API errors 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-a-modal-512b8-ible-and-reports-API-errors-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-a-modal-512b8-ible-and-reports-API-errors-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-a-modal-512b8-ible-and-reports-API-errors-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[37/46] [desktop] › e2e/ui.spec.ts:73:7 › UI interactions › the verification queue lets the office verify a learner link
+  31) [desktop] › e2e/ui.spec.ts:73:7 › UI interactions › the verification queue lets the office verify a learner link 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-the-ver-8ad26-ffice-verify-a-learner-link-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-the-ver-8ad26-ffice-verify-a-learner-link-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-the-ver-8ad26-ffice-verify-a-learner-link-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[38/46] [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows
+  32) [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-a-guard-81b31-the-whole-workspace-follows-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[39/46] [desktop] › e2e/ui.spec.ts:101:7 › UI interactions › notifications open, and the bell reflects the unread state
+  33) [desktop] › e2e/ui.spec.ts:101:7 › UI interactions › notifications open, and the bell reflects the unread state 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-notific-74bfd-l-reflects-the-unread-state-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-notific-74bfd-l-reflects-the-unread-state-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-notific-74bfd-l-reflects-the-unread-state-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[40/46] [desktop] › e2e/ui.spec.ts:112:7 › UI interactions › signing out from the account menu returns to sign-in and blocks the dashboard
+  34) [desktop] › e2e/ui.spec.ts:112:7 › UI interactions › signing out from the account menu returns to sign-in and blocks the dashboard 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/ui-UI-interactions-signing-8dcf2-in-and-blocks-the-dashboard-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/ui-UI-interactions-signing-8dcf2-in-and-blocks-the-dashboard-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/ui-UI-interactions-signing-8dcf2-in-and-blocks-the-dashboard-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[41/46] [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist
+  35) [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--9886d-arner-and-all-three-persist-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[42/46] [desktop] › e2e/workflows.spec.ts:82:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian
+  36) [desktop] › e2e/workflows.spec.ts:82:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--74144-result-reaches-the-guardian-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[43/46] [desktop] › e2e/workflows.spec.ts:152:7 › Database-backed workflows (UI → API → database → UI) › guardian switches learners; unverified links expose no records
+  37) [desktop] › e2e/workflows.spec.ts:152:7 › Database-backed workflows (UI → API → database → UI) › guardian switches learners; unverified links expose no records 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/workflows-Database-backed--d3442-ied-links-expose-no-records-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--d3442-ied-links-expose-no-records-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--d3442-ied-links-expose-no-records-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[44/46] [desktop] › e2e/workflows.spec.ts:178:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged)
+  38) [desktop] › e2e/workflows.spec.ts:178:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged) 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--a0a76--timetable-rules-unchanged--desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[45/46] [desktop] › e2e/workflows.spec.ts:228:7 › Database-backed workflows (UI → API → database → UI) › teacher uploads a resource and a submission; both are retrievable by an authorised caller only
+  39) [desktop] › e2e/workflows.spec.ts:228:7 › Database-backed workflows (UI → API → database → UI) › teacher uploads a resource and a submission; both are retrievable by an authorised caller only 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/workflows-Database-backed--ec476-y-an-authorised-caller-only-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--ec476-y-an-authorised-caller-only-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--ec476-y-an-authorised-caller-only-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+[46/46] [desktop] › e2e/workflows.spec.ts:261:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted
+  40) [desktop] › e2e/workflows.spec.ts:261:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted 
+
+    Error: browserType.launch: Executable doesn't exist at /home/user/.cache/ms-playwright/chromium_headless_shell-1248/chrome-headless-shell-linux64/chrome-headless-shell
+    ╔════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright was just installed or updated.       ║
+    ║ Please run the following command to download new browsers: ║
+    ║                                                            ║
+    ║     npx playwright install                                 ║
+    ║                                                            ║
+    ║ <3 Playwright Team                                         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    Error Context: test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/error-context.md
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workflows-Database-backed--f23fe-fication-read-are-persisted-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+
+  40 failed
+    [desktop] › e2e/auth.spec.ts:12:7 › Authentication and onboarding › the sign-in page offers no demonstration credentials and calls the policy endpoint 
+    [desktop] › e2e/auth.spec.ts:31:7 › Authentication and onboarding › rejects a wrong password without revealing whether the account exists 
+    [desktop] › e2e/auth.spec.ts:46:7 › Authentication and onboarding › signs in, routes by role, and signs out (server-side revocation) 
+    [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others 
+    [desktop] › e2e/auth.spec.ts:87:7 › Authentication and onboarding › an expired or tampered session returns to sign-in with a clear reason 
+    [desktop] › e2e/auth.spec.ts:102:7 › Authentication and onboarding › forgotten-password answers identically for known and unknown addresses 
+    [desktop] › e2e/auth.spec.ts:119:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use 
+    [desktop] › e2e/auth.spec.ts:181:7 › Authentication and onboarding › the public reset page never confirms whether an address is registered 
+    [desktop] › e2e/auth.spec.ts:195:7 › Authentication and onboarding › a school-registration page validates before it submits anything 
+    [desktop] › e2e/auth.spec.ts:212:7 › Authentication and onboarding › an invalid invitation link is explained, not silently accepted 
+    [desktop] › e2e/auth.spec.ts:217:7 › Authentication and onboarding › guardian registration explains that verification is required 
+    [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters 
+    [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit phone (390px) ───
+    [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone 
+    [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on phone 
+    [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit tablet (834px) ──
+    [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on tablet 
+    [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on tablet 
+    [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit desktop (1440px) 
+    [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on desktop 
+    [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on desktop 
+    [desktop] › e2e/responsive.spec.ts:82:7 › Accessibility basics › every form control on the public pages has an accessible name and a visible focus ring 
+    [desktop] › e2e/responsive.spec.ts:104:7 › Accessibility basics › keyboard tabbing reaches the sign-in form and the skip link works 
+    [desktop] › e2e/responsive.spec.ts:120:7 › Accessibility basics › status is never communicated by colour alone 
+    [desktop] › e2e/responsive.spec.ts:129:7 › Accessibility basics › motion is suppressed when the user prefers reduced motion 
+    [desktop] › e2e/responsive.spec.ts:141:7 › Accessibility basics › the sign-in page respects a high-contrast, no-image rendering 
+    [desktop] › e2e/ui.spec.ts:13:7 › UI interactions › sidebar navigation reaches every admin area and marks the active item 
+    [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen 
+    [desktop] › e2e/ui.spec.ts:38:7 › UI interactions › a table supports search, and destructive actions require confirmation 
+    [desktop] › e2e/ui.spec.ts:59:7 › UI interactions › a modal form keeps its validation visible and reports API errors 
+    [desktop] › e2e/ui.spec.ts:73:7 › UI interactions › the verification queue lets the office verify a learner link 
+    [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows 
+    [desktop] › e2e/ui.spec.ts:101:7 › UI interactions › notifications open, and the bell reflects the unread state 
+    [desktop] › e2e/ui.spec.ts:112:7 › UI interactions › signing out from the account menu returns to sign-in and blocks the dashboard 
+    [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist 
+    [desktop] › e2e/workflows.spec.ts:82:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian 
+    [desktop] › e2e/workflows.spec.ts:152:7 › Database-backed workflows (UI → API → database → UI) › guardian switches learners; unverified links expose no records 
+    [desktop] › e2e/workflows.spec.ts:178:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged) 
+    [desktop] › e2e/workflows.spec.ts:228:7 › Database-backed workflows (UI → API → database → UI) › teacher uploads a resource and a submission; both are retrievable by an authorised caller only 
+    [desktop] › e2e/workflows.spec.ts:261:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted 
+  6 passed (1.4m)
+EXIT=1

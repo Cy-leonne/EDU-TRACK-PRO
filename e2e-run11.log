@@ -1,0 +1,631 @@
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [NestFactory] Starting Nest application...
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] PrismaModule dependencies initialized +23ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] CsvModule dependencies initialized +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] ConfigHostModule dependencies initialized +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] AuditModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] TenancyModule dependencies initialized +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] AuditControllerModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] HealthModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] ConfigModule dependencies initialized +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] SchoolModule dependencies initialized +2ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] LearningAreasModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] ReportsModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] ClassesModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] AssignmentsModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] ThrottlerModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] JwtModule dependencies initialized +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] NotificationsModule dependencies initialized +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] AppModule dependencies initialized +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] SubmissionsModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] ResourcesModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] TimetablesModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] FilesModule dependencies initialized +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] AssessmentsModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] PeopleModule dependencies initialized +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] DashboardsModule dependencies initialized +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:09 PM     LOG [InstanceLoader] AuthModule dependencies initialized +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] NotificationsController {/api/v1/notifications}: +206ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications, GET} route +4ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/unread-count, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/preferences, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/preferences, PATCH} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/retry-failed-emails, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/:id/read, PATCH} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/notifications/read-all, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] AuthController {/api/v1/auth}: +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/setup-status, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/setup/first-admin, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/login, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/refresh, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/logout, POST} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/me, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/change, POST} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/forgot, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/password/reset, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/register/school, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/register/parent, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/preview, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/accept, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations, POST} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/invitations/:id/revoke, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/accounts/:userId/password-reset-link, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/accounts/:userId/status, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/logout-all, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/auth/parent/link-request, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] SchoolController {/api/v1/school}: +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/bootstrap, GET} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/profile, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/profile, PATCH} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/academic-years/:id, PATCH} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms/:id, PATCH} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/terms/:id/results-publication, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/school/grades, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] PeopleController {/api/v1}: +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id, PATCH} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id, DELETE} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/:id/reset-password, POST} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/import/template, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teachers/import, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parents, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parents, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parents/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parents/:id/reset-password, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id/verify, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/parent-links/:id/correction-request, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learners, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/:id, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learners, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/:id, PATCH} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/import/template, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learners/import, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] ClassesController {/api/v1/classes}: +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes, POST} route +2ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, PATCH} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/:id/learners, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments/bulk, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/enrollments/:id, DELETE} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/classes/validation/enrollments, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] LearningAreasController {/api/v1/learning-areas}: +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas, GET} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/:id, PATCH} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/:id, DELETE} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/template, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/import-template, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/strands, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/strands, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/sub-strands, POST} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements/bulk, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/learning-areas/requirements/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] AssignmentsController {/api/v1/teacher-assignments}: +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/me, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/coverage, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/availability/:teacherId, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/teacher-assignments/availability, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] SubmissionsController {/api/v1/submissions}: +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/summary/:assignmentId, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id/review, PATCH} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/submissions/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] FilesController {/api/v1/files}: +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/files/policy, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/files/upload, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id/download, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id/meta, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/files/:id, DELETE} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] AssessmentsController {/api/v1/assessments}: +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/categories, GET} route +2ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/categories, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/achievement-levels, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/achievement-levels, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/rubrics, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/rubrics, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/dashboard, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id, PATCH} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/status, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/publish, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/:id/resources, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/resources/:resourceId, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/assessments/resources/upload, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] ResultsController {/api/v1/results}: +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/grid/:assessmentId, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/grid/:assessmentId, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/feedback, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/:id/amend, PATCH} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/:id/history, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/learner/:learnerId, GET} route +2ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/results/learner/:learnerId/progress, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] ResourcesController {/api/v1/resources}: +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/assignments, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/assignments, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, PATCH} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/resources/:id, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] TimetablesController {/api/v1/timetables}: +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods/default, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/periods, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/rooms, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/rooms, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/preflight, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/generate, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/:versionId/validate, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/:versionId/conflicts, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/me, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/learner/:learnerId, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/school-grid, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/timetables/:timetableId/history, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/entries, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/move, PATCH} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/:entryId/lock, PATCH} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/entries/:entryId, DELETE} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/publish, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/unpublish, POST} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/versions/:versionId/duplicate, POST} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/timetables/timetables/:timetableId, DELETE} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] DashboardsController {/api/v1}: +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/admin, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/teacher, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/dashboard/parent, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/school, GET} route +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] AuditController {/api/v1/audit-logs}: +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/audit-logs, GET} route +1ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/audit-logs/actions, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] ExportsController {/api/v1/reports/export}: +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/learners.csv, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/teachers.csv, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/results.csv, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/api/v1/reports/export/timetable.csv, GET} route +0ms
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RoutesResolver] HealthController {/api/v1/health}: +0ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [RouterExplorer] Mapped {/health, GET} route +1ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [PrismaService] Database connection established
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [NestApplication] Nest application successfully started +3ms
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [Bootstrap] API listening on http://0.0.0.0:4101/api/v1
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [Bootstrap] OpenAPI docs: http://localhost:4101/api/v1/docs
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:10 PM     LOG [Bootstrap] Storage driver: local | Email provider: console
+
+[WebServer] 
+[WebServer] > @edutrack/web@1.0.0 e2e:serve
+[WebServer] > next build && next start -p 4100 -H 127.0.0.1
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer] 
+
+[WebServer]    Creating an optimized production build ...
+
+[WebServer]  ✓ Compiled successfully
+
+[WebServer]    Skipping linting
+
+[WebServer]    Checking validity of types ...
+
+[WebServer]    Collecting page data ...
+
+[WebServer]    Generating static pages (0/35) ...
+
+[WebServer]    Generating static pages (8/35) 
+
+[WebServer]    Generating static pages (17/35) 
+
+[WebServer]    Generating static pages (26/35) 
+
+[WebServer]  ✓ Generating static pages (35/35)
+
+[WebServer]    Finalizing page optimization ...
+
+[WebServer]    Collecting build traces ...
+
+[WebServer] 
+
+[WebServer] Route (app)                              Size     First Load JS
+[WebServer] ┌ ○ /                                    1.29 kB         107 kB
+[WebServer] ├ ○ /_not-found                          876 B          88.1 kB
+[WebServer] ├ ○ /academics/assignments               5.68 kB         118 kB
+[WebServer] ├ ○ /academics/calendar                  3.69 kB         107 kB
+[WebServer] ├ ○ /academics/classes                   5.47 kB         109 kB
+[WebServer] ├ ○ /academics/learning-areas            5.9 kB          109 kB
+[WebServer] ├ ○ /account                             5.41 kB         135 kB
+[WebServer] ├ ○ /activate                            4.8 kB          117 kB
+[WebServer] ├ ƒ /api/v1/[...path]                    0 B                0 B
+[WebServer] ├ ○ /audit                               3.6 kB          107 kB
+[WebServer] ├ ○ /dashboard                           7.97 kB         120 kB
+[WebServer] ├ ○ /family                              3.76 kB         116 kB
+[WebServer] ├ ○ /family/assignments                  6.37 kB         110 kB
+[WebServer] ├ ○ /family/notifications                3.19 kB         133 kB
+[WebServer] ├ ○ /family/resources                    5.24 kB         109 kB
+[WebServer] ├ ○ /family/results                      4.05 kB         108 kB
+[WebServer] ├ ○ /family/timetable                    2.86 kB         109 kB
+[WebServer] ├ ○ /login                               5.13 kB         120 kB
+[WebServer] ├ ○ /people/invitations                  4.39 kB         108 kB
+[WebServer] ├ ○ /people/learners                     6.58 kB         119 kB
+[WebServer] ├ ○ /people/parents                      5.43 kB         109 kB
+[WebServer] ├ ○ /people/teachers                     6.41 kB         110 kB
+[WebServer] ├ ○ /register                            5.2 kB          120 kB
+[WebServer] ├ ○ /register/parent                     5.14 kB         117 kB
+[WebServer] ├ ○ /reports                             5.26 kB         117 kB
+[WebServer] ├ ○ /reset-password                      4.06 kB         116 kB
+[WebServer] ├ ○ /settings/assessment                 5.38 kB         109 kB
+[WebServer] ├ ○ /settings/school                     6.09 kB         110 kB
+[WebServer] ├ ○ /teaching/assessments                5.51 kB         118 kB
+[WebServer] ├ ƒ /teaching/assessments/[id]           9.58 kB         122 kB
+[WebServer] ├ ○ /teaching/classes                    3.43 kB         116 kB
+[WebServer] ├ ○ /teaching/resources                  6.56 kB         119 kB
+[WebServer] ├ ○ /teaching/submissions                6.51 kB         119 kB
+[WebServer] ├ ○ /teaching/timetable                  2.35 kB         109 kB
+[WebServer] ├ ○ /timetable                           8.56 kB         121 kB
+[WebServer] └ ƒ /timetable/[versionId]               5.84 kB         121 kB
+[WebServer] + First Load JS shared by all            87.3 kB
+[WebServer]   ├ chunks/1528-3f19e898dfad5355.js      31.7 kB
+[WebServer]   ├ chunks/1dd3208c-c871fa9375d4de2a.js  53.6 kB
+[WebServer]   └ other shared chunks (total)          1.9 kB
+[WebServer] 
+
+[WebServer] 
+[WebServer] ○  (Static)   prerendered as static content
+[WebServer] ƒ  (Dynamic)  server-rendered on demand
+[WebServer] 
+
+[WebServer]   ▲ Next.js 14.2.35
+
+[WebServer]   - Local:        http://127.0.0.1:4100
+
+[WebServer]   - Network:      http://127.0.0.1:4100
+[WebServer] 
+[WebServer]  ✓ Starting...
+
+[WebServer]  ✓ Ready in 305ms
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "edutrack_pro_test", schema "public" at "localhost:5432"
+
+3 migrations found in prisma/migrations
+
+
+No pending migrations to apply.
+E2E fixtures -> http://127.0.0.1:4101
+  • school cmvaymlnu0001ncxbsaw2l46u
+  • calendar cmvaymlpp000qncxb3eizxrw6 / cmvaymlqb000vncxbo7hhx9jy
+  • learning area cmvaymlqu000zncxbd4iabj0r
+  • teacher cmvaymlsj001bncxban4vrgq8 (via invitation)
+  • class cmvaymlt8001fncxbifi0m3ae
+  • bell schedule: true
+  • learners 3
+  • assessment cmvaymlx1003fncxbnpvk7a4c
+  • assessment published: true
+  • verified link cmvaymm36004mncxbr8spa3vx for cmvaymlv1002oncxbs6w44ksw
+  • guardians created (cmvaymm1h004dncxb7lteo8cv + stranger)
+Fixture creation finished with 0 failed call(s) — wrote /home/user/edutrack-pro/apps/web/e2e/.seed.json
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:45 PM     LOG [PasswordService] Password hashing backend: argon2id
+
+
+Running 47 tests using 1 worker
+
+[1/47] [desktop] › e2e/auth.spec.ts:12:7 › Authentication and onboarding › the sign-in page offers no demonstration credentials and calls the policy endpoint
+[2/47] [desktop] › e2e/auth.spec.ts:31:7 › Authentication and onboarding › rejects a wrong password without revealing whether the account exists
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:48 PM    WARN [ExceptionFilter] [177a47a4-7ea0-4d1a-ab6e-ea903df95382] POST /api/v1/auth/login -> 401: "Incorrect email or password."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:49 PM    WARN [ExceptionFilter] [53609663-c616-4559-92d0-f56977c57b81] POST /api/v1/auth/login -> 401: "Incorrect email or password."
+
+[3/47] [desktop] › e2e/auth.spec.ts:46:7 › Authentication and onboarding › signs in, routes by role, and signs out (server-side revocation)
+[4/47] [desktop] › e2e/auth.spec.ts:72:7 › Authentication and onboarding › each role lands on its own home and cannot reach the others
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [db6186e7-a1f6-46b2-bc39-3d1f267fe1cf] GET /api/v1/audit-logs -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [8a3da6a0-f97d-4e20-835c-ac230d7f6bc9] GET /api/v1/audit-logs/actions -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [3bbaa607-47aa-4431-8276-c676fed5f564] GET /api/v1/audit-logs?page=1&pageSize=50 -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [7a9c8b2f-b853-4673-b392-562d836cb66b] GET /api/v1/audit-logs/actions -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [5db7c95c-6bbc-45c0-a982-03c31c1a75d0] GET /api/v1/audit-logs?page=1&pageSize=50 -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [e490c27d-dc11-4068-a053-66df6b97c1e3] GET /api/v1/dashboard/teacher -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:52 PM    WARN [ExceptionFilter] [c5b49434-eeb4-4b5a-9cbc-bf7db842e17e] GET /api/v1/notifications/unread-count -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:53 PM    WARN [ExceptionFilter] [bce3856a-8c35-4424-9fe0-fcf62d79c3db] GET /api/v1/audit-logs -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:53 PM    WARN [ExceptionFilter] [7c6e955c-00e3-45e3-a60f-a091e08d0b27] GET /api/v1/parents -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:53 PM    WARN [ExceptionFilter] [7c8e8d06-609e-434b-ad9b-9615280d174c] GET /api/v1/audit-logs/actions -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:53 PM    WARN [ExceptionFilter] [2656ba92-a8ac-4c7c-83f7-66986ed59fc8] GET /api/v1/audit-logs?page=1&pageSize=50 -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:53 PM    WARN [ExceptionFilter] [88aa6733-95c3-409d-9bc4-b85ca9dd9fcb] GET /api/v1/audit-logs/actions -> 401: "Your account is missing the required permission: audit:read"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:53 PM    WARN [ExceptionFilter] [3b7a8908-9add-418e-893a-6a0db049a667] GET /api/v1/audit-logs?page=1&pageSize=50 -> 401: "Your account is missing the required permission: audit:read"
+
+[5/47] [desktop] › e2e/auth.spec.ts:96:7 › Authentication and onboarding › an expired or tampered session returns to sign-in with a clear reason
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:54 PM    WARN [ExceptionFilter] [ea2546f0-1b58-429f-94f1-003257970af9] GET /api/v1/auth/me -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:54 PM    WARN [ExceptionFilter] [8a784bd6-14f5-4dcc-9e82-db56ab740166] POST /api/v1/auth/refresh -> 401: "Your session has expired. Please sign in again."
+
+[6/47] [desktop] › e2e/auth.spec.ts:111:7 › Authentication and onboarding › forgotten-password answers identically for known and unknown addresses
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:55 PM     LOG [NotificationsService] Email notification skipped (EMAIL_PROVIDER=console) for type=ACCOUNT; 1 in-app notification(s) created.
+
+[7/47] [desktop] › e2e/auth.spec.ts:128:7 › Authentication and onboarding › a reset link sets a new password once, revokes sessions, and is single use
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:56 PM    WARN [ExceptionFilter] [b551edff-3139-456d-a7a9-446890425b1e] POST /api/v1/auth/login -> 401: "Incorrect email or password."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:56 PM    WARN [ExceptionFilter] [fd8995bc-71aa-4fd4-a0eb-d70783ef668c] POST /api/v1/auth/refresh -> 401: "This session was already signed out. Please sign in again."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:56 PM    WARN [ExceptionFilter] [b8407636-53b4-48fd-bea7-ee440b62eef6] POST /api/v1/auth/password/reset -> 400: "This reset link is invalid or has expired. Request a new one."
+
+[8/47] [desktop] › e2e/auth.spec.ts:190:7 › Authentication and onboarding › the public reset page never confirms whether an address is registered
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:57 PM     LOG [NotificationsService] Email notification skipped (EMAIL_PROVIDER=console) for type=ACCOUNT; 1 in-app notification(s) created.
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:57 PM    WARN [ExceptionFilter] [74ffaeb5-ce9f-4ddf-96ff-6ac7175d19f9] POST /api/v1/auth/password/reset -> 400: "This reset link is invalid or has expired. Request a new one."
+
+[9/47] [desktop] › e2e/auth.spec.ts:204:7 › Authentication and onboarding › a school-registration page validates before it submits anything
+[10/47] [desktop] › e2e/auth.spec.ts:221:7 › Authentication and onboarding › an invalid invitation link is explained, not silently accepted
+[11/47] [desktop] › e2e/auth.spec.ts:226:7 › Authentication and onboarding › guardian registration explains that verification is required
+[12/47] [desktop] › e2e/privacy.spec.ts:8:7 › Authorisation and school/family isolation › a guardian can never read another family’s learner
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [dea6b1c4-9e5a-4d2d-8e12-74c2e3112cd8] GET /api/v1/learners/cmvaymlv1002oncxbs6w44ksw -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [3bfb4eed-bd43-4c0d-bfb6-e42e45ab9fae] GET /api/v1/results/learner/cmvaymlv1002oncxbs6w44ksw -> 403: "This learner is not linked to your account."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [767345f6-3271-4e57-b984-1f2970163212] GET /api/v1/timetables/learner/cmvaymlv1002oncxbs6w44ksw -> 403: "This learner is not linked to your account."
+
+[13/47] [desktop] › e2e/privacy.spec.ts:28:7 › Authorisation and school/family isolation › a teacher cannot reach unrelated classes, publish, or manage accounts
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [264be11a-66db-4f75-a6bc-71dd229a2e75] POST /api/v1/auth/invitations -> 401: "Your account is missing the required permission: user:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [c7559c51-57ee-4ca4-bd23-64adbdad3558] POST /api/v1/learners -> 401: "Your account is missing the required permission: learner:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [b4768710-86a8-42fc-8825-9516204375d2] GET /api/v1/dashboard/parent -> 403: "No parent profile is linked to your account."
+
+[14/47] [desktop] › e2e/privacy.spec.ts:46:7 › Authorisation and school/family isolation › a guardian cannot modify school data even with a valid school id
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [75296314-555e-45a9-b4da-a3ae30fe2d60] PATCH /api/v1/learners/cmvaymlv1002oncxbs6w44ksw -> 401: "Your account is missing the required permission: learner:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [9496a98d-df03-4a56-9e21-6238f33516e7] POST /api/v1/classes -> 401: "Your account is missing the required permission: class:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [a1dba174-fae2-4a18-966f-6ed2fc054d17] POST /api/v1/parent-links -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [9e4b2a0f-57ec-46bc-bd19-7dd10e8d06af] PATCH /api/v1/parent-links/anything -> 401: "Your account is missing the required permission: parent:manage"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [d3025847-36eb-432a-90c7-6029afe1d020] POST /api/v1/timetables/publish -> 401: "Your account is missing the required permission: timetable:publish"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [105a2a3e-8b01-4462-b7bc-78d0410214be] POST /api/v1/teacher-assignments -> 401: "Your account is missing the required permission: assignment:manage"
+
+[15/47] [desktop] › e2e/privacy.spec.ts:65:7 › Authorisation and school/family isolation › unauthenticated callers are refused everywhere that matters
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [d5e7cecf-4314-4928-b16b-299492f805ce] GET /api/v1/auth/me -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [1e49352a-08ab-4e29-aa1f-ee73b587f185] GET /api/v1/learners -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [7f8202e6-96f0-40b8-af2d-6d4cb89ecf44] GET /api/v1/teachers -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [fb4b0a89-b6f7-45df-b85c-6a86c0adb81e] GET /api/v1/notifications -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [cd3e0775-599e-4985-b4c0-30769006f9b6] GET /api/v1/timetables -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [06daca18-faf4-4d20-8753-6ef8be1fe0b9] GET /api/v1/reports/export/learners.csv -> 401: "Please sign in to continue."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [0d52b7d7-d621-41fa-abda-ef373cc707ad] GET /api/v1/audit-logs -> 401: "Please sign in to continue."
+
+[16/47] [desktop] › e2e/privacy.spec.ts:73:7 › Authorisation and school/family isolation › tampered ids and guessed file urls reveal nothing
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [1ee727f3-edd7-47b0-9a85-ec76b4043d4a] GET /api/v1/learners/ckzzzzzzzzzzzzzzzzzzzzzz -> 404: "Learner not found"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [90b5c853-c5ed-485f-af5a-de959d793865] GET /storage/anything.pdf -> 404: "Cannot GET /storage/anything.pdf"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [9ce38c82-e6ea-4cbb-8dd9-9c1479a1da87] GET /uploads/anything.pdf -> 404: "Cannot GET /uploads/anything.pdf"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [08efe434-7405-46fd-8bf9-f78918e0e43d] GET /files/00000000-0000-0000-0000-000000000000/download -> 404: "Cannot GET /files/00000000-0000-0000-0000-000000000000/download"
+
+[17/47] [desktop] › e2e/privacy.spec.ts:88:7 › Authorisation and school/family isolation › school isolation: a second school cannot see the first school’s data
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [5ca9cb93-7787-4a49-bad1-88ea9a41c5d9] GET /api/v1/learners/cmvaymlv1002oncxbs6w44ksw -> 404: "Learner not found"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [ed0b0727-6ce9-4dae-96b3-6d2e32c7626f] GET /api/v1/results/learner/cmvaymlv1002oncxbs6w44ksw -> 404: "Learner not found"
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [df7246aa-726d-4706-94d4-ea7bc300828d] GET /api/v1/classes/cmvaymlt8001fncxbifi0m3ae -> 404: "Class not found"
+
+[18/47] [desktop] › e2e/privacy.spec.ts:109:7 › Authorisation and school/family isolation › administrators are never created into an existing school without an invitation
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [3c6d94bb-69f9-4934-81e8-95a4c978c701] POST /api/v1/auth/register/school -> 403: "That setup token is not valid."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [e5018088-4a96-4bc9-b726-2e52a5b122cf] POST /api/v1/auth/register/parent -> 400: "We could not find a school with that code. Check the letter from the school office, or call them for help."
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:44:59 PM    WARN [ExceptionFilter] [5f0449e6-006e-43a6-830b-04a601c3bd60] POST /api/v1/auth/invitations/accept -> 400: "This invitation link is no longer valid. Ask the school office to send a new one."
+
+[19/47] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit phone (390px)
+[20/47] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on phone
+[21/47] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on phone
+[22/47] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit tablet (834px)
+[23/47] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on tablet
+[24/47] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on tablet
+[25/47] [desktop] › e2e/responsive.spec.ts:36:9 › Responsive layout › public pages fit desktop (1440px)
+[26/47] [desktop] › e2e/responsive.spec.ts:45:9 › Responsive layout › the admin workspace is usable on desktop
+[27/47] [desktop] › e2e/responsive.spec.ts:68:9 › Responsive layout › the guardian workspace is usable on desktop
+[28/47] [desktop] › e2e/responsive.spec.ts:82:7 › Accessibility basics › every form control on the public pages has an accessible name and a visible focus ring
+[29/47] [desktop] › e2e/responsive.spec.ts:104:7 › Accessibility basics › keyboard tabbing reaches the sign-in form and the skip link works
+[30/47] [desktop] › e2e/responsive.spec.ts:120:7 › Accessibility basics › status is never communicated by colour alone
+[WebServer] [Nest] 40397  - 10/16/2026, 12:45:15 PM    WARN [ExceptionFilter] [6865e263-47f0-4d17-8c7a-2015bc29762c] GET /api/v1/dashboard/teacher -> 403: "Administrator account has no teacher profile."
+
+[31/47] [desktop] › e2e/responsive.spec.ts:129:7 › Accessibility basics › motion is suppressed when the user prefers reduced motion
+[32/47] [desktop] › e2e/responsive.spec.ts:141:7 › Accessibility basics › the sign-in page respects a high-contrast, no-image rendering
+[33/47] [desktop] › e2e/ui.spec.ts:13:7 › UI interactions › sidebar navigation reaches every admin area and marks the active item
+[34/47] [desktop] › e2e/ui.spec.ts:31:7 › UI interactions › the top bar exposes search and the account menu, and search reaches a screen
+[35/47] [desktop] › e2e/ui.spec.ts:38:7 › UI interactions › a table supports search, and destructive actions require confirmation
+[36/47] [desktop] › e2e/ui.spec.ts:59:7 › UI interactions › a modal form keeps its validation visible and reports API errors
+[37/47] [desktop] › e2e/ui.spec.ts:73:7 › UI interactions › the verification queue lets the office verify a learner link
+[38/47] [desktop] › e2e/ui.spec.ts:87:7 › UI interactions › a guardian switches learners and the whole workspace follows
+[39/47] [desktop] › e2e/ui.spec.ts:102:7 › UI interactions › notifications open, and the bell reflects the unread state
+[40/47] [desktop] › e2e/ui.spec.ts:113:7 › UI interactions › signing out from the account menu returns to sign-in and blocks the dashboard
+[41/47] [desktop] › e2e/workflows.spec.ts:12:7 › Database-backed workflows (UI → API → database → UI) › administrator creates a learning area, a class and a learner and all three persist
+[42/47] [desktop] › e2e/workflows.spec.ts:83:7 › Database-backed workflows (UI → API → database → UI) › the office invites a teacher from the invitations screen and the person activates
+[43/47] [desktop] › e2e/workflows.spec.ts:136:7 › Database-backed workflows (UI → API → database → UI) › teacher enters results and publishes; the published result reaches the guardian
+[WebServer] [Nest] 40397  - 10/16/2026, 12:45:37 PM     LOG [NotificationsService] Email notification skipped (EMAIL_PROVIDER=console) for type=ASSESSMENT_PUBLISHED; 1 in-app notification(s) created.
+
+[WebServer] [Nest] 40397  - 10/16/2026, 12:45:38 PM    WARN [ExceptionFilter] [6db24603-f5e7-4d09-9a67-ff0c078e293a] GET /api/v1/results/learner/cmvaymlv1002oncxbs6w44ksw -> 403: "This learner is not linked to your account."
+
+[44/47] [desktop] › e2e/workflows.spec.ts:206:7 › Database-backed workflows (UI → API → database → UI) › guardian switches learners; unverified links expose no records
+[45/47] [desktop] › e2e/workflows.spec.ts:232:7 › Database-backed workflows (UI → API → database → UI) › administrator generates, validates and publishes a timetable (rules unchanged)
+[WebServer] [Nest] 40397  - 10/16/2026, 12:45:41 PM    WARN [ExceptionFilter] [0f4e72c3-de70-4968-be80-ed161f5589ae] PATCH /api/v1/timetables/entries/move -> 400: ["versionId: Required"]
+
+[46/47] [desktop] › e2e/workflows.spec.ts:290:7 › Database-backed workflows (UI → API → database → UI) › teacher uploads a resource and a submission; both are retrievable by an authorised caller only
+[WebServer] [Nest] 40397  - 10/16/2026, 12:45:42 PM    WARN [ExceptionFilter] [65fc33b8-fc53-43a0-9a13-3ae8c8326788] GET /api/v1/files?purpose=RESOURCE -> 404: "Cannot GET /api/v1/files?purpose=RESOURCE"
+
+[47/47] [desktop] › e2e/workflows.spec.ts:323:7 › Database-backed workflows (UI → API → database → UI) › profile update and notification read are persisted
+  47 passed (1.6m)
+EXIT=0

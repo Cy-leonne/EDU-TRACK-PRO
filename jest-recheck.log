@@ -1,0 +1,340 @@
+FAIL test/e2e/journeys.spec.ts (122.335 s)
+  ● End-to-end journeys (1–10) › journey 3 — the administrator creates the class, imports learners by CSV (dry run first), then links a guardian
+
+    TypeError: storage._handleFile is not a function
+
+      at ../../node_modules/@nestjs/platform-express/node_modules/multer/lib/make-middleware.js:158:17
+      at allowAll (../../node_modules/@nestjs/platform-express/node_modules/multer/index.js:8:3)
+      at wrappedFileFilter (../../node_modules/@nestjs/platform-express/node_modules/multer/index.js:44:7)
+      at Multipart.<anonymous> (../../node_modules/@nestjs/platform-express/node_modules/multer/lib/make-middleware.js:132:7)
+      at HeaderParser.cb (../../node_modules/busboy/lib/types/multipart.js:358:14)
+      at HeaderParser.push (../../node_modules/busboy/lib/types/multipart.js:162:20)
+      at SBMH.ssCb [as _cb] (../../node_modules/busboy/lib/types/multipart.js:394:37)
+      at feed (../../node_modules/streamsearch/lib/sbmh.js:219:14)
+      at SBMH.push (../../node_modules/streamsearch/lib/sbmh.js:104:16)
+      at Multipart._write (../../node_modules/busboy/lib/types/multipart.js:567:19)
+
+  ● End-to-end journeys (1–10) › journey 3 — the administrator creates the class, imports learners by CSV (dry run first), then links a guardian
+
+    thrown: "Exceeded timeout of 60000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      155 |   /* ------------------------------------------------------------------ 3 --- */
+      156 |
+    > 157 |   it('journey 3 — the administrator creates the class, imports learners by CSV (dry run first), then links a guardian', async () => {
+          |   ^
+      158 |     const year = await prisma.academicYear.create({
+      159 |       data: { schoolId: state.schoolId, name: '2026', startDate: new Date('2026-01-05'), endDate: new Date('2026-10-30'), isCurrent: true },
+      160 |     });
+
+      at test/e2e/journeys.spec.ts:157:3
+      at Object.<anonymous> (test/e2e/journeys.spec.ts:25:1)
+
+  ● End-to-end journeys (1–10) › journey 7 — the teacher sees the timetable, creates an assessment, attaches evidence, enters and publishes results
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 400
+    Received array: [200, 201]
+
+      513 |       state.teacherToken,
+      514 |     );
+    > 515 |     expect([200, 201]).toContain(saved.status);
+          |                        ^
+      516 |
+      517 |     const grid = await api.get(`/results/grid/${state.assessmentId}`, state.teacherToken);
+      518 |     const gridData = grid.data as unknown as { summary: { entered: number; expected: number; missing: number } };
+
+      at Object.<anonymous> (test/e2e/journeys.spec.ts:515:24)
+
+  ● End-to-end journeys (1–10) › journey 8 — the guardian sees the published result, the class timetable and their child’s progress
+
+    expect(received).toBeTruthy()
+
+    Received: undefined
+
+      540 |   it('journey 8 — the guardian sees the published result, the class timetable and their child’s progress', async () => {
+      541 |     const token = state.guardianToken;
+    > 542 |     expect(token).toBeTruthy();
+          |                   ^
+      543 |
+      544 |     const dashboard = await api.get('/dashboard/parent', token);
+      545 |     expect(dashboard.status).toBe(200);
+
+      at Object.<anonymous> (test/e2e/journeys.spec.ts:542:19)
+
+  ● End-to-end journeys (1–10) › journey 9 — an unrelated guardian is denied the child’s results, timetable and file downloads
+
+    expect(received).toContain(expected) // indexOf
+
+    Expected value: 401
+    Received array: [403, 404]
+
+      654 |     });
+      655 |     const denied = await api.get(`/results/learner/${unlinked.id}`, state.guardianToken);
+    > 656 |     expect([403, 404]).toContain(denied.status);
+          |                        ^
+      657 |
+      658 |     // Uploaded evidence is not downloadable by a guardian from another school either.
+      659 |     const file = await prisma.fileObject.findFirst({ where: { schoolId: state.schoolId } });
+
+      at Object.<anonymous> (test/e2e/journeys.spec.ts:656:24)
+
+  ● End-to-end journeys (1–10) › journey 10 — the whole chain is auditable and no secrets were ever written out
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      669 |     const seen = new Set(actions.map((entry) => entry.action));
+      670 |     for (const expected of ['auth.login', 'result.amended', 'assessment.published']) {
+    > 671 |       expect([...seen].some((action) => action.startsWith(expected) || action === expected)).toBe(true);
+          |                                                                                              ^
+      672 |     }
+      673 |
+      674 |     // Exports and result changes leave a trail the administrator can review.
+
+      at Object.<anonymous> (test/e2e/journeys.spec.ts:671:94)
+
+
+  ● Test suite failed to run
+
+    thrown: "Exceeded timeout of 60000 ms for a hook.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      44 |   });
+      45 |
+    > 46 |   afterAll(async () => {
+         |   ^
+      47 |     await prisma.$disconnect();
+      48 |     await app.close();
+      49 |   });
+
+      at test/e2e/journeys.spec.ts:46:3
+      at Object.<anonymous> (test/e2e/journeys.spec.ts:25:1)
+
+PASS test/integration/auth-registration.spec.ts
+  Registration, invitations and account lifecycle (integration)
+    school registration
+      ✓ creates the school, its administrator, the Grade 7-9 catalogue and default assessment vocabulary in one transaction (88 ms)
+      ✓ never accepts a mismatched password confirmation and creates nothing (9 ms)
+      ✓ requires the terms to be accepted (5 ms)
+      ✓ can never add an administrator to an EXISTING school, by any unauthenticated route (106 ms)
+      ✓ rejects a duplicate email address and a school code already in use (10 ms)
+      ✓ records the registration in the audit trail without storing a plaintext password (3 ms)
+    teacher invitations
+      ✓ lets an administrator invite a teacher and returns a one-time activation link (10 ms)
+      ✓ does not create a usable account until the invitation is accepted (5 ms)
+      ✓ previews the invitation without leaking the token back (14 ms)
+      ✓ accepts the invitation, sets the teacher password and activates the membership (105 ms)
+      ✓ refuses a second use of the same invitation token (65 ms)
+      ✓ rejects a revoked invitation (29 ms)
+      ✓ will not let a teacher invite anyone (permission enforced on the server) (48 ms)
+      ✓ keeps an invitation bound to the address it was issued for (66 ms)
+    guardian registration and verification
+      ✓ registers a guardian from an invitation and links the learner WITHOUT granting access (107 ms)
+      ✓ registers a guardian with the school code and no learner access at all (98 ms)
+      ✓ lets a guardian request a link with the assessment number + surname, but never confirms the learner exists (61 ms)
+      ✓ exposes learner data only after an administrator verifies the link (61 ms)
+      ✓ publishes the onboarding policy so the sign-in page offers only permitted routes (3 ms)
+      ✓ rejects an invitation addressed to a different person and never creates the account (12 ms)
+    password recovery and account lifecycle
+      ✓ answers a forgotten-password request identically for known and unknown addresses (9 ms)
+      ✓ issues a single-use, time-limited reset token and revokes sessions on completion (177 ms)
+      ✓ lets an administrator deactivate an account, which immediately blocks sign-in (68 ms)
+      ✓ refuses to let an administrator deactivate their own account (9 ms)
+      ✓ signs an account out of every device on request (51 ms)
+
+PASS test/integration/assessments-results.spec.ts
+  Assessment lifecycle and results (integration)
+    ✓ lets the assigned teacher create a draft assessment (26 ms)
+    ✓ refuses an assessment for a class the teacher does not teach (19 ms)
+    ✓ validates the assessment payload (marks target required when marks are used) (4 ms)
+    ✓ uploads a PDF to private storage and attaches it as evidence (32 ms)
+    ✓ moves the assessment through draft → ready for review (21 ms)
+    ✓ saves a draft results grid and rejects a mark above the maximum (53 ms)
+    ✓ hides unpublished results from the parent (12 ms)
+    ✓ publishes the assessment, notifies guardians and exposes results to the linked parent only (292 ms)
+    ✓ locks resources once the assessment is published (5 ms)
+    ✓ appends a narrative comment to a published result so guardians see teacher feedback (33 ms)
+    ✓ amends a published result only with a reason, and keeps an immutable history (49 ms)
+    ✓ shows the assessment dashboard counts for the term (10 ms)
+    ✓ denies parents the ability to enter or publish results (5 ms)
+
+PASS test/integration/people-and-enrollment.spec.ts
+  People, classes and enrollment (integration)
+    ✓ rejects a malformed learner payload with field-level errors (5 ms)
+    ✓ creates a teacher with a staff number and workload caps (59 ms)
+    ✓ rejects a duplicate staff e-mail (no duplicate accounts) (7 ms)
+    ✓ never lets a teacher create staff accounts (3 ms)
+    ✓ stores teacher availability as a full weekly grid and reads it back (47 ms)
+    ✓ creates learners, refuses duplicate admission numbers, and finds them by search (25 ms)
+    ✓ enrolls a learner into a class and blocks double enrollment in the same term (28 ms)
+    ✓ bulk-enrolls learners and reports the class roll (70 ms)
+    ✓ creates a parent, links them to a learner, and keeps the link unverified until an admin verifies it (81 ms)
+    ✓ refuses to link a parent from another school to this school’s learner (249 ms)
+    ✓ protects learner records from parents who are not linked to them (15 ms)
+
+PASS test/integration/files.spec.ts
+  Secure file storage (integration)
+    ✓ publishes the upload policy for client-side pickers (7 ms)
+    ✓ accepts a real PDF and a real PNG (22 ms)
+    ✓ rejects an executable disguised as a PDF (content sniffing, not extensions) (4 ms)
+    ✓ rejects a PNG renamed to .pdf (signature and name must agree) (4 ms)
+    ✓ rejects a file larger than the configured limit (48 ms)
+    ✓ streams an authorised download with safe headers and never a public URL (18 ms)
+    ✓ refuses an unauthenticated download and hides files from other schools (237 ms)
+    ✓ keeps an assignment-only document away from an unlinked parent until it is published (94 ms)
+    ✓ will not delete a file while a live resource references it, but frees it once archived (55 ms)
+    ✓ never stores the original path traversal in an object key (7 ms)
+
+PASS test/integration/submissions.spec.ts
+  Assignment submissions (integration)
+    ✓ lets the assigned teacher publish an assignment for their class (17 ms)
+    ✓ accepts a hand-in from the linked guardian, with a file and who submitted it (33 ms)
+    ✓ never exposes the hand-in to a different school (16 ms)
+    ✓ refuses a hand-in for a learner the guardian is not linked to (7 ms)
+    ✓ refuses a hand-in with neither a file, a link nor a note (3 ms)
+    ✓ shows the hand-in to the teacher who owns the class, with a completion summary (11 ms)
+    ✓ lets the teacher return the work with a reason the guardian can read (24 ms)
+    ✓ refuses to return work without a reason (3 ms)
+    ✓ lets the guardian resubmit after a return and then the teacher accept it (42 ms)
+    ✓ refuses to hand in over an acceptance (the teacher must return it first) (11 ms)
+    ✓ notifies the guardians in-app when work is reviewed (9 ms)
+    ✓ records the workflow in the audit trail (1 ms)
+    ✓ refuses a submitter from another school entirely (5 ms)
+
+PASS test/integration/exports.spec.ts
+  CSV exports (integration)
+    ✓ lets an administrator download the learner register as a CSV attachment (13 ms)
+    ✓ neutralises spreadsheet formula injection in exported cells (9 ms)
+    ✓ refuses a teacher and a guardian, and tells them why (6 ms)
+    ✓ never mixes another school’s rows into an export (13 ms)
+    ✓ writes an audited, reviewable entry for each export (23 ms)
+    ✓ uses the school’s own achievement band in the results export (10 ms)
+    ✓ exports the timetable only from a published version, or says there is none (13 ms)
+    ✓ caps row counts so an export cannot become an unbounded data dump (14 ms)
+    ✓ keeps credentials out of every export (32 ms)
+    ✓ escapes quotes, commas and newlines so a spreadsheet parses the file correctly (1 ms)
+
+PASS test/integration/auth-and-isolation.spec.ts
+  Auth + school isolation (integration)
+    ✓ rejects an unauthenticated request (3 ms)
+    ✓ rejects a wrong password with a generic message (no account enumeration) (41 ms)
+    ✓ signs a user in and returns their role, school and permissions (39 ms)
+    ✓ rotates the refresh token and revokes the whole family when a token is replayed (62 ms)
+    ✓ never exposes password hashes or secrets through the API (6 ms)
+    ✓ hides another school’s learners, classes and teachers (14 ms)
+    ✓ returns 404 (not 403) when another school’s record id is requested by an administrator (12 ms)
+    ✓ refuses to let a parent read a learner from another school (4 ms)
+    ✓ refuses cross-role escalated calls (7 ms)
+    ✓ records an audit trail entry for administrative actions (19 ms)
+
+PASS test/integration/notification-preferences.spec.ts
+  Notification preferences (integration)
+    ✓ returns defaults for a user who has never opened the screen (8 ms)
+    ✓ refuses to enable email without an address (6 ms)
+    ✓ accepts an email address and enables email when the deployment cannot send yet (5 ms)
+    ✓ stores muted event types and rejects unknown ones (8 ms)
+    ✓ keeps preferences personal: the teacher sees their own, unmuted defaults (5 ms)
+    ✓ really stops writing inbox rows when in-app notifications are switched off (58 ms)
+    ✓ delivers again as soon as in-app notifications are switched back on (51 ms)
+    ✓ never exposes another user’s notifications (272 ms)
+    ✓ reports the unread count the header badge uses (16 ms)
+
+PASS test/unit/timetable-generator.spec.ts
+  TimetableGenerator — hard constraints (unit)
+    ✓ places every required lesson when the configuration is feasible (39 ms)
+    ✓ never double-books a class (31 ms)
+    ✓ never double-books a teacher (34 ms)
+    ✓ never schedules a lesson in a break, lunch or non-teaching period (31 ms)
+    ✓ keeps every lesson inside the configured school day (24 ms)
+    ✓ respects teacher availability windows (24 ms)
+    ✓ respects the class daily lesson cap (21 ms)
+    ✓ never exceeds a teacher’s weekly workload limit (37 ms)
+    ✓ never exceeds a teacher’s daily limit (22 ms)
+    ✓ reports actionable diagnostics when a lesson has no teacher assigned (12 ms)
+    ✓ explains why lessons could not be placed (never silently drops them) (29 ms)
+    ✓ is deterministic: the same configuration always produces the same timetable (42 ms)
+    ✓ produces a different arrangement when the tie-break seed changes (43 ms)
+    ✓ spreads a learning area across different days instead of stacking it (21 ms)
+
+[32m[Nest] 38922  - [39m10/16/2026, 12:42:04 PM [32m    LOG[39m [38;5;3m[PasswordService] [39m[32mPassword hashing backend: argon2id[39m
+PASS test/unit/password.service.spec.ts
+  PasswordService (unit)
+    ✓ hashes a password with a self-describing algorithm prefix (39 ms)
+    ✓ verifies the correct password and rejects a wrong one (121 ms)
+    ✓ produces a different hash for the same password (per-password salt) (31 ms)
+    ✓ fails closed on an unknown or malformed hash instead of throwing
+
+PASS test/unit/file-validation.spec.ts
+  Upload validation (unit)
+    ✓ accepts a real PDF (1 ms)
+    ✓ accepts JPEG and PNG images (camera uploads from the mobile app)
+    ✓ rejects an executable disguised with a document extension (9 ms)
+    ✓ rejects a script extension outright (1 ms)
+    ✓ rejects a type that is not on the allow-list (1 ms)
+    ✓ rejects a file whose declared MIME type contradicts its contents
+    ✓ rejects files above the configured size limit (2 ms)
+    ✓ rejects empty uploads
+    ✓ sanitises the display name and never lets it become a storage path (1 ms)
+
+PASS test/unit/validation.spec.ts
+  Shared validation schemas (unit)
+    password policy
+      ✓ accepts a strong password and rejects weak ones (1 ms)
+    login
+      ✓ normalises the email and defaults the client type to WEB (1 ms)
+    school calendar
+      ✓ requires the end date to be after the start date (1 ms)
+      ✓ accepts a term inside the year and rejects an out-of-range term number
+    school profile
+      ✓ applies Kenyan defaults when the school is created
+      ✓ rejects a closing time that is not after the opening time (1 ms)
+      ✓ allows partial profile updates (PATCH) without re-sending the whole profile
+    learner
+      ✓ trims the admission number and requires a usable name (1 ms)
+    assessment and results
+      ✓ accepts valid marks and rejects negative or non-numeric entry (1 ms)
+      ✓ refuses a result that is both absent and excused
+      ✓ requires rubric criteria to be unique and positively weighted (5 ms)
+    parent self-link
+      ✓ always requires a second verifier besides the assessment number
+    learning resources and assignments
+      ✓ requires a file for FILE resources and a URL for LINK resources
+      ✓ refuses an assignment due date in the past only when explicitly disallowed by the caller (1 ms)
+
+PASS test/unit/permissions.spec.ts
+  Role permission matrix (unit)
+    ✓ exactly three roles exist and each has a non-empty permission set (1 ms)
+    ✓ only grants permissions that exist in the catalogue (8 ms)
+    ✓ gives administrators every administrative capability (1 ms)
+    ✓ never lets a teacher publish a timetable, manage users or read the audit log
+    ✓ never lets a parent see drafts, enter marks or read staff data (1 ms)
+    ✓ keeps the three roles distinct — no role is a superset of another (1 ms)
+    ✓ gives every role the timetable read access its UI needs
+    ✓ gives parents read access to published results and resources only (1 ms)
+
+PASS test/unit/timetable-validator.spec.ts
+  validateTimetable — hard constraint detection (unit)
+    ✓ reports no conflicts for a clean timetable (1 ms)
+    ✓ detects a class double-booked in the same period (1 ms)
+    ✓ detects a teacher double-booked across classes
+    ✓ detects a room double-booking when rooms are used (1 ms)
+    ✓ detects a lesson placed in a break period
+    ✓ detects a lesson outside school hours
+    ✓ detects a lesson on a day the school does not open
+    ✓ detects a teacher scheduled when they are unavailable (1 ms)
+    ✓ detects a weekly workload breach
+    ✓ detects an under-allocated learning area (1 ms)
+    ✓ detects a lesson whose teacher is not assigned to that class and area
+    ✓ flags a learner enrolled in two classes that are timetabled at the same time (1 ms)
+    ✓ summarises conflicts by code and severity for the UI conflict panel
+
+Test Suites: 1 failed, 14 passed, 15 total
+Tests:       5 failed, 168 passed, 173 total
+Snapshots:   0 total
+Time:        134.06 s, estimated 136 s
+Ran all test suites.
+Force exiting Jest: Have you considered using `--detectOpenHandles` to detect async operations that kept running after all tests finished?

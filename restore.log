@@ -1,0 +1,407 @@
++ cd /home/user/edutrack-pro
++ swapon --show
+/home/user/restore.sh: line 7: swapon: command not found
++ grep -q swapfile
++ sudo fallocate -l 6G /swapfile
++ sudo chmod 600 /swapfile
++ sudo mkswap /swapfile
+Setting up swapspace version 1, size = 6 GiB (6442446848 bytes)
+no label, UUID=7bba46f7-2e53-48f6-a071-be6207e2a30b
++ sudo swapon /swapfile
++ command -v psql
++ sudo apt-get update -qq
++ sudo apt-get install -y -qq postgresql postgresql-contrib
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Preconfiguring packages ...
+/var/cache/debconf/tmp.ci/postgresql.config.oqnnza: 12: pg_lsclusters: not found
+Selecting previously unselected package libext2fs2t64:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38553 files and directories currently installed.)
+Preparing to unpack .../libext2fs2t64_1.47.2-3+b12_amd64.deb ...
+Adding 'diversion of /lib/x86_64-linux-gnu/libe2p.so.2 to /lib/x86_64-linux-gnu/libe2p.so.2.usr-is-merged by libext2fs2t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libe2p.so.2.3 to /lib/x86_64-linux-gnu/libe2p.so.2.3.usr-is-merged by libext2fs2t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libext2fs.so.2 to /lib/x86_64-linux-gnu/libext2fs.so.2.usr-is-merged by libext2fs2t64'
+Adding 'diversion of /lib/x86_64-linux-gnu/libext2fs.so.2.4 to /lib/x86_64-linux-gnu/libext2fs.so.2.4.usr-is-merged by libext2fs2t64'
+Unpacking libext2fs2t64:amd64 (1.47.2-3+b12) ...
+Selecting previously unselected package libss2:amd64.
+Preparing to unpack .../libss2_1.47.2-3+b12_amd64.deb ...
+Unpacking libss2:amd64 (1.47.2-3+b12) ...
+Selecting previously unselected package logsave.
+Preparing to unpack .../logsave_1.47.2-3+b12_amd64.deb ...
+Unpacking logsave (1.47.2-3+b12) ...
+Setting up libext2fs2t64:amd64 (1.47.2-3+b12) ...
+Setting up libss2:amd64 (1.47.2-3+b12) ...
+Selecting previously unselected package e2fsprogs.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 38582 files and directories currently installed.)
+Preparing to unpack .../00-e2fsprogs_1.47.2-3+b12_amd64.deb ...
+Unpacking e2fsprogs (1.47.2-3+b12) ...
+Selecting previously unselected package libjson-perl.
+Preparing to unpack .../01-libjson-perl_4.10000-1_all.deb ...
+Unpacking libjson-perl (4.10000-1) ...
+Selecting previously unselected package postgresql-client-common.
+Preparing to unpack .../02-postgresql-client-common_278_all.deb ...
+Unpacking postgresql-client-common (278) ...
+Selecting previously unselected package libio-pty-perl.
+Preparing to unpack .../03-libio-pty-perl_1%3a1.20-1+b3_amd64.deb ...
+Unpacking libio-pty-perl (1:1.20-1+b3) ...
+Selecting previously unselected package libipc-run-perl.
+Preparing to unpack .../04-libipc-run-perl_20231003.0-2_all.deb ...
+Unpacking libipc-run-perl (20231003.0-2) ...
+Selecting previously unselected package postgresql-common-dev.
+Preparing to unpack .../05-postgresql-common-dev_278_all.deb ...
+Unpacking postgresql-common-dev (278) ...
+Selecting previously unselected package ssl-cert.
+Preparing to unpack .../06-ssl-cert_1.1.3_all.deb ...
+Unpacking ssl-cert (1.1.3) ...
+Selecting previously unselected package postgresql-common.
+Preparing to unpack .../07-postgresql-common_278_all.deb ...
+Adding 'diversion of /usr/bin/pg_config to /usr/bin/pg_config.libpq-dev by postgresql-common'
+Unpacking postgresql-common (278) ...
+Selecting previously unselected package libpopt0:amd64.
+Preparing to unpack .../08-libpopt0_1.19+dfsg-2_amd64.deb ...
+Unpacking libpopt0:amd64 (1.19+dfsg-2) ...
+Selecting previously unselected package logrotate.
+Preparing to unpack .../09-logrotate_3.22.0-1_amd64.deb ...
+Unpacking logrotate (3.22.0-1) ...
+Selecting previously unselected package libc-l10n.
+Preparing to unpack .../10-libc-l10n_2.41-12+deb13u4_all.deb ...
+Unpacking libc-l10n (2.41-12+deb13u4) ...
+Selecting previously unselected package locales.
+Preparing to unpack .../11-locales_2.41-12+deb13u4_all.deb ...
+Unpacking locales (2.41-12+deb13u4) ...
+Selecting previously unselected package e2fsprogs-l10n.
+Preparing to unpack .../12-e2fsprogs-l10n_1.47.2-3_all.deb ...
+Unpacking e2fsprogs-l10n (1.47.2-3) ...
+Selecting previously unselected package libcommon-sense-perl:amd64.
+Preparing to unpack .../13-libcommon-sense-perl_3.75-3+b5_amd64.deb ...
+Unpacking libcommon-sense-perl:amd64 (3.75-3+b5) ...
+Selecting previously unselected package libtypes-serialiser-perl.
+Preparing to unpack .../14-libtypes-serialiser-perl_1.01-1_all.deb ...
+Unpacking libtypes-serialiser-perl (1.01-1) ...
+Selecting previously unselected package libjson-xs-perl.
+Preparing to unpack .../15-libjson-xs-perl_4.040-1~deb13u1_amd64.deb ...
+Unpacking libjson-xs-perl (4.040-1~deb13u1) ...
+Selecting previously unselected package postgresql-client-17.
+Preparing to unpack .../16-postgresql-client-17_17.11-0+deb13u1_amd64.deb ...
+Unpacking postgresql-client-17 (17.11-0+deb13u1) ...
+Selecting previously unselected package postgresql-17.
+Preparing to unpack .../17-postgresql-17_17.11-0+deb13u1_amd64.deb ...
+Unpacking postgresql-17 (17.11-0+deb13u1) ...
+Selecting previously unselected package postgresql.
+Preparing to unpack .../18-postgresql_17+278_all.deb ...
+Unpacking postgresql (17+278) ...
+Selecting previously unselected package sysstat.
+Preparing to unpack .../19-sysstat_12.7.5-2_amd64.deb ...
+Unpacking sysstat (12.7.5-2) ...
+Setting up postgresql-client-common (278) ...
+Setting up libc-l10n (2.41-12+deb13u4) ...
+Setting up libio-pty-perl (1:1.20-1+b3) ...
+Setting up postgresql-client-17 (17.11-0+deb13u1) ...
+update-alternatives: using /usr/share/postgresql/17/man/man1/psql.1.gz to provide /usr/share/man/man1/psql.1.gz (psql.1.gz) in auto mode
+Setting up libcommon-sense-perl:amd64 (3.75-3+b5) ...
+Setting up locales (2.41-12+deb13u4) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Generating locales (this might take a while)...
+Generation complete.
+Setting up ssl-cert (1.1.3) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Setting up libipc-run-perl (20231003.0-2) ...
+Setting up logsave (1.47.2-3+b12) ...
+Setting up libtypes-serialiser-perl (1.01-1) ...
+Setting up libjson-perl (4.10000-1) ...
+Setting up sysstat (12.7.5-2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Creating config file /etc/default/sysstat with new version
+update-alternatives: using /usr/bin/sar.sysstat to provide /usr/bin/sar (sar) in auto mode
+Created symlink '/etc/systemd/system/sysstat.service.wants/sysstat-collect.timer' → '/usr/lib/systemd/system/sysstat-collect.timer'.
+Created symlink '/etc/systemd/system/sysstat.service.wants/sysstat-rotate.timer' → '/usr/lib/systemd/system/sysstat-rotate.timer'.
+Created symlink '/etc/systemd/system/sysstat.service.wants/sysstat-summary.timer' → '/usr/lib/systemd/system/sysstat-summary.timer'.
+Created symlink '/etc/systemd/system/multi-user.target.wants/sysstat.service' → '/usr/lib/systemd/system/sysstat.service'.
+Setting up libpopt0:amd64 (1.19+dfsg-2) ...
+Setting up postgresql-common-dev (278) ...
+Setting up logrotate (3.22.0-1) ...
+Created symlink '/etc/systemd/system/timers.target.wants/logrotate.timer' → '/usr/lib/systemd/system/logrotate.timer'.
+/usr/sbin/policy-rc.d returned 101, not running 'start logrotate.service logrotate.timer'
+Setting up libjson-xs-perl (4.040-1~deb13u1) ...
+Setting up e2fsprogs (1.47.2-3+b12) ...
+Created symlink '/etc/systemd/system/timers.target.wants/e2scrub_all.timer' → '/usr/lib/systemd/system/e2scrub_all.timer'.
+Failed to preset unit: Unit /etc/systemd/system/e2scrub_reap.service is masked
+/usr/bin/deb-systemd-helper: error: systemctl preset failed on e2scrub_reap.service: No such file or directory
+/usr/sbin/policy-rc.d returned 101, not running 'start e2scrub_all.timer e2scrub_reap.service'
+Setting up postgresql-common (278) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Creating config file /etc/postgresql-common/createcluster.conf with new version
+Building PostgreSQL dictionaries from installed myspell/hunspell packages...
+Removing obsolete dictionary files:
+invoke-rc.d: policy-rc.d denied execution of start.
+Created symlink '/etc/systemd/system/multi-user.target.wants/postgresql.service' → '/usr/lib/systemd/system/postgresql.service'.
+/usr/sbin/policy-rc.d returned 101, not running 'start postgresql.service'
+Setting up postgresql-17 (17.11-0+deb13u1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Creating new PostgreSQL cluster 17/main ...
+/usr/lib/postgresql/17/bin/initdb -D /var/lib/postgresql/17/main --auth-local peer --auth-host scram-sha-256 --no-instructions
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "C.UTF-8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/17/main ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... Etc/UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up e2fsprogs-l10n (1.47.2-3) ...
+Setting up postgresql (17+278) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (Dialog frontend will not work on a dumb terminal, an emacs shell buffer, or without a controlling terminal.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Teletype
+debconf: unable to initialize frontend: Teletype
+debconf: (This frontend requires a controlling tty.)
+debconf: falling back to frontend: Noninteractive
+Processing triggers for libc-bin (2.41-12+deb13u4) ...
++ sudo service postgresql start
++ sleep 2
++ sudo -u postgres psql -tc 'SELECT 1 FROM pg_roles WHERE rolname='\''edutrack'\'''
++ grep -q 1
++ sudo -u postgres psql -c 'CREATE ROLE edutrack LOGIN PASSWORD '\''edutrack_dev_password'\'' CREATEDB;'
+CREATE ROLE
++ for db in edutrack_pro edutrack_pro_shadow edutrack_pro_test edutrack_pro_uat
++ grep -q 1
++ sudo -u postgres psql -tc 'SELECT 1 FROM pg_database WHERE datname='\''edutrack_pro'\'''
++ sudo -u postgres createdb -O edutrack edutrack_pro
++ for db in edutrack_pro edutrack_pro_shadow edutrack_pro_test edutrack_pro_uat
++ grep -q 1
++ sudo -u postgres psql -tc 'SELECT 1 FROM pg_database WHERE datname='\''edutrack_pro_shadow'\'''
++ sudo -u postgres createdb -O edutrack edutrack_pro_shadow
++ for db in edutrack_pro edutrack_pro_shadow edutrack_pro_test edutrack_pro_uat
++ grep -q 1
++ sudo -u postgres psql -tc 'SELECT 1 FROM pg_database WHERE datname='\''edutrack_pro_test'\'''
++ sudo -u postgres createdb -O edutrack edutrack_pro_test
++ for db in edutrack_pro edutrack_pro_shadow edutrack_pro_test edutrack_pro_uat
++ grep -q 1
++ sudo -u postgres psql -tc 'SELECT 1 FROM pg_database WHERE datname='\''edutrack_pro_uat'\'''
++ sudo -u postgres createdb -O edutrack edutrack_pro_uat
++ npm install --no-audit --no-fund --prefer-offline
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated npmlog@5.0.1: This package is no longer supported.
+npm warn deprecated multer@1.4.5-lts.2: Multer 1.x is impacted by a number of vulnerabilities, which have been patched in 2.x. You should upgrade to the latest 2.x version.
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated gauge@3.0.2: This package is no longer supported.
+npm warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+npm warn deprecated @humanwhocodes/config-array@0.13.0: Use @eslint/config-array instead
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@10.4.5: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@10.3.10: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated eslint@8.57.1: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+
+> edutrack-pro@1.0.0 postinstall
+> npm run -s prisma:generate
+
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (v5.22.0) to ./node_modules/@prisma/client in 852ms
+
+Start by importing your Prisma Client (See: https://pris.ly/d/importing-client)
+
+Tip: Want real-time updates to your database without manual polling? Discover how with Pulse: https://pris.ly/tip-0-pulse
+
+
+added 1113 packages in 29s
+npm notice
+npm notice New major version of npm available! 10.8.2 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
++ npm run build:packages
+
+> edutrack-pro@1.0.0 build:packages
+> npm run build -w @edutrack/shared-config && npm run build -w @edutrack/shared-types && npm run build -w @edutrack/validation
+
+
+> @edutrack/shared-config@1.0.0 build
+> tsc -p tsconfig.json
+
+
+> @edutrack/shared-types@1.0.0 build
+> tsc -p tsconfig.json
+
+
+> @edutrack/validation@1.0.0 build
+> tsc -p tsconfig.json
+
++ npx prisma migrate deploy
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "db": PostgreSQL database "edutrack_pro", schema "public" at "localhost:5432"
+
+3 migrations found in prisma/migrations
+
+Applying migration `20261012145357_init`
+Applying migration `20261013144814_assignment_submissions_and_notification_preferences`
+Applying migration `20261016100128_account_invitations`
+
+The following migration(s) have been applied:
+
+migrations/
+  └─ 20261012145357_init/
+    └─ migration.sql
+  └─ 20261013144814_assignment_submissions_and_notification_preferences/
+    └─ migration.sql
+  └─ 20261016100128_account_invitations/
+    └─ migration.sql
+      
+All migrations have been successfully applied.
+┌─────────────────────────────────────────────────────────┐
+│  Update available 5.22.0 -> 8.0.0-rc.23                 │
+│                                                         │
+│  This is a major update - please follow the guide at    │
+│  https://pris.ly/d/major-version-upgrade                │
+│                                                         │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
++ SEED_ADMIN_PASSWORD='Admin-EduTrack-2026!demo'
++ SEED_TEACHER_PASSWORD='Teacher-EduTrack-2026!demo'
++ SEED_PARENT_PASSWORD='Parent-EduTrack-2026!demo'
++ npm run db:seed
+
+> edutrack-pro@1.0.0 db:seed
+> ts-node -P prisma/tsconfig.seed.json prisma/seed.ts
+
+
+EduTrack Pro seed
+===================
+  School created: Nakuru Hills Junior School (Demo) (cmvaxcqdt0000bpb0gdx2rd0t)
+  Calendar: 2026 with 3 terms · grades 7, 8, 9
+  Administrator: admin@nhjs.demo
+  Learning areas: 9 · strands seeded for 9 areas · rooms: 8
+  Teachers: 8 (first teacher login: teacher@nhjs.demo)
+  Classes: 5 · learners: 120 (synthetic names only)
+  Parents: 5 · verified learner links: 9 (+1 pending verification)
+  Weekly requirements: 45 rows · teaching assignments: 45
+  Assessments: 30 (20 published, 10 in progress)
+  Results: 570 (13 amended with a change trail) · feedback written on ~35%
+  Learning resources: 15 · assignments: 10 · 5 private PDFs stored under ./storage
+  Primary parent parent@nhjs.demo is linked to learners in 1 class(es)
+  Bell schedule: 50 slots (40 teaching periods across 5 days)
+  Timetable: 160 lessons placed, 0 diagnostics, 0 conflicts (errors: 0)
+  Notifications: created for 8 teachers and 5 parents
+
+Seed complete
+-------------
+  School          : Nakuru Hills Junior School (Demo) (NHJS-001)
+  Learners        : 120
+  Assessments     : 30 · results 570
+  Timetable       : v1 published, 160 lessons, 0 unplaced
+
+Sign in at http://localhost:3000/login
+  ADMIN   admin@nhjs.demo
+  TEACHER teacher@nhjs.demo
+  PARENT  parent@nhjs.demo
+
+Passwords came from SEED_* environment variables.
+
+Note: every name, assessment number and phone number above is synthetic demo data.
+
++ npm run -w @edutrack/api build
+
+> @edutrack/api@1.0.0 build
+> nest build
+
++ npm --prefix apps/mobile install --no-audit --no-fund --prefer-offline
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated querystring@0.2.1: The querystring API is considered Legacy. new code should use the URLSearchParams API instead.
+npm warn deprecated osenv@0.1.5: This package is no longer supported.
+npm warn deprecated sudo-prompt@9.2.1: Package no longer supported. Contact Support at https://www.npmjs.com/support for more info.
+npm warn deprecated tar@6.2.1: Old versions of tar are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated @xmldom/xmldom@0.7.13: this version has critical issues, please update to the latest version
+npm warn deprecated @babel/plugin-proposal-optional-catch-binding@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-catch-binding instead.
+npm warn deprecated @babel/plugin-proposal-logical-assignment-operators@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-logical-assignment-operators instead.
+npm warn deprecated @babel/plugin-proposal-numeric-separator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-numeric-separator instead.
+npm warn deprecated @babel/plugin-proposal-nullish-coalescing-operator@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-nullish-coalescing-operator instead.
+npm warn deprecated @babel/plugin-proposal-optional-chaining@7.21.0: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-optional-chaining instead.
+npm warn deprecated @babel/plugin-proposal-object-rest-spread@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-object-rest-spread instead.
+npm warn deprecated @babel/plugin-proposal-class-properties@7.18.6: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-class-properties instead.
+npm warn deprecated @babel/plugin-proposal-async-generator-functions@7.20.7: This proposal has been merged to the ECMAScript standard and thus this plugin is no longer maintained. Please use @babel/plugin-transform-async-generator-functions instead.
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.1.6: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.1.6: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated glob@7.1.6: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated uuid@8.3.2: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated uuid@7.0.3: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
+npm warn deprecated glob@10.5.0: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 1136 packages in 12s
++ echo RESTORE_COMPLETE
+RESTORE_COMPLETE
+EXIT=0
